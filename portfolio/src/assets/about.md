@@ -1,0 +1,1 @@
+My name is David Rollinson (@devushkabeam) and I am a creative technologist and recent Computational Arts graduate from Goldsmiths College. My work is about the material affect of the immaterial. I contextualise the post-internet anxiety of proliferation through generating multimodal artworks operating as sites of slowness and attunement.
