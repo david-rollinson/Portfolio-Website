@@ -5,7 +5,6 @@ import Maintenance from "../components/Maintenance.vue";
 
 <template>
   <main>
-    <!-- <TheWelcome /> -->
     <Maintenance />
   </main>
 </template>
