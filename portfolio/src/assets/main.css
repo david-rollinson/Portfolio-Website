@@ -4,7 +4,7 @@
 
 #app {
   /*  Alter column widths. */
-  max-width: 1280px;
+  max-width: auto;
   margin: 0 auto;
   /* Site padding */
   /* padding: 2rem; */
