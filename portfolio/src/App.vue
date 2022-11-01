@@ -1,6 +1,6 @@
 <script setup>
 // import { RouterLink, RouterView } from "vue-router";
-// import HelloWorld from "./components/HelloWorld.vue";
+import HelloWorld from "./components/HelloWorld.vue";
 </script>
 
 <template>
@@ -30,12 +30,7 @@ header {
   font-family: 'Montserrat Alternates';
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
+nav { /*Style the Home Nav Buttons*/
   width: 100%;
   font-size: 12px;
   text-align: center;

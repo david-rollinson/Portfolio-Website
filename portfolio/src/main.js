@@ -1,10 +1,9 @@
 import { createApp, VueElement } from "vue";
-import App from "./App.vue";
+// import App from "./App.vue";
+import App from "./components/Maintenance.vue"
 import router from "./router";
 
 import "./assets/main.css";
-
-
 
 const app = createApp(App);
 

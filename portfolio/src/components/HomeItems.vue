@@ -1,5 +1,5 @@
 <template>
-    <div class="item">
+    <div class="">
       <i>
         <slot name="thumbnails"></slot>
       </i>
