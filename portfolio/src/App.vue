@@ -5,9 +5,9 @@
 
 <template>
   <header>
-    <h2>
+    <h3>
       My name is David Rollinson (@devushkabeam) and I am a creative technologist and recent Computational Arts graduate from Goldsmiths College. My work is about the material affect of the immaterial. I contextualise the post-internet anxiety of proliferation through generating multimodal artworks operating as sites of slowness and attunement.
-    </h2>
+    </h3>
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
@@ -27,6 +27,7 @@ header {
   line-height: 1.5;
   max-height: 100vh;
   text-align: center;
+  font-family: 'Montserrat Alternates';
 }
 
 .logo {

@@ -1,18 +1,18 @@
+
 @import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Codystar:wght@400&family=Montserrat+Alternates:ital,wght@1,400&display=swap');
 
 #app {
+  /*  Alter column widths. */
   max-width: 1280px;
   margin: 0 auto;
+  /* Site padding */
   padding: 2rem;
-
+  /* Fonts */
+  font-family: 'Codystar', cursive;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'Assistant', sans-serif;
   font-weight: normal;
-}
-
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
 }
 
 @media (hover: hover) {
@@ -28,8 +28,9 @@ a,
   }
 
   #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+    /* Grid Layout for Site  */
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+    /* padding: 0 2rem; */
   }
 }
