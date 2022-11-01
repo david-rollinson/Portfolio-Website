@@ -25,7 +25,7 @@
   } */
   
   h2 {
-    font-family: codystar;
+    font-family: Montserrat Alternates;
     font-size: 1.2rem;
     font-weight: 500;
     /* margin-bottom: 0.4rem; */
