@@ -12,6 +12,8 @@
   <style scoped>
   .maintenanceMsg {
     margin-top: 50%;
+    height: 100%;
+    vertical-align: middle;
     display: flex;
     place-content: center;
     align-items: center;
