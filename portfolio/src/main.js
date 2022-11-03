@@ -1,7 +1,7 @@
 import { createApp, VueElement } from "vue";
 // import App from "./App.vue";
 import "./assets/main.css";
-import App from "./components/Maintenance.vue"
+import App from "./views/Default.vue"
 import router from "./router";
 
 const app = createApp(App);
