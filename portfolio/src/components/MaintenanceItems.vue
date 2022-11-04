@@ -33,7 +33,7 @@
   }
 
   h1:hover {
-    cursor:move;
+    cursor:cell;
   }
-  
+
   </style>

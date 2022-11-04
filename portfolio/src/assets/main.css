@@ -59,11 +59,4 @@ body {
     align-items: center;
     justify-content: center;
   }
-
-  #app {
-    /* Grid Layout for site media  */
-    /* display: grid; */
-    /* grid-template-columns: 1fr 1fr; */
-    /* padding: 0 2rem; */
-  }
 }
