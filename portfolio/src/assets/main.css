@@ -5,13 +5,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Codystar:wght@400&family=Montserrat+Alternates:ital,wght@1,400&display=swap');
 
 /* set a new CURSOR across the whole window */
-html{
-  min-height: 100%;
+html {
+  min-height: 100vh;
   cursor: crosshair;
+}
+
+body {
+  min-height: 100vh;
 }
 
 #app {
   /*  Alter column widths. */
+  min-height: 100%;
   max-width: auto;
   margin: 0 auto;
   /* Site padding */
@@ -47,8 +52,9 @@ html{
   }
 }
 
-@media (min-width: 1024px) {
+@media {
   body {
+    height: html;
     display: flex;
     align-items: center;
     justify-content: center;

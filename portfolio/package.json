@@ -8,6 +8,8 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "@branu-jp/v-drag": "^0.1.0",
+    "v-drag": "^3.0.8",
     "vue": "^3.2.41",
     "vue-router": "^4.1.5"
   },

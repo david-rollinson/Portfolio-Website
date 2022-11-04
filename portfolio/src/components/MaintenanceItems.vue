@@ -1,22 +1,22 @@
 <template>
     <!-- this should probably eventually be refactored into a new file? -->
-      <div class="maintenanceMsg">
+      <div class="maintenanceMsg" draggable="true">
         <h1>
           <slot name="heading"></slot>
           <!-- //the maintenance message should be dropped in here somehow  -->
         </h1>
-        <slot></slot>
         </div>
 </template>
   
   <style scoped>
   .maintenanceMsg {
-    margin-top: 50%;
-    height: 100%;
+    height: 100vh;
     vertical-align: middle;
     display: flex;
-    place-content: center;
+    background-color: transparent;
+    justify-content: center;
     align-items: center;
+    text-align: center;
   }
   
   /* .details {
@@ -26,9 +26,13 @@
   
   h1 {
     font-family: Codystar;
-    font-size: 1.2rem;
-    font-weight: 500;
-    /* margin-bottom: 0.4rem; */
+    font-size: 26px;
+    font-weight: 800;
     color: black;
+    position:absolute;
+  }
+
+  h1:hover {
+    cursor:move;
   }
   </style>
