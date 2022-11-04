@@ -4,6 +4,7 @@
         <h1>
           <slot name="heading"></slot>
           <!-- //the maintenance message should be dropped in here somehow  -->
+        <slot></slot>
         </h1>
         </div>
 </template>
