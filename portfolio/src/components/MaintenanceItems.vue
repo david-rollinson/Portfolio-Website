@@ -10,22 +10,6 @@
 </template>
   
   <style scoped>
-
-  @font-face {
-    font-family: 'Codystar', sans-serif;
-    src: local(Codystar),
-    url(./fonts/Codystar.ttf);
-  }
-  @font-face {
-    font-family: 'Montserrat Alternates', sans-serif;
-    src: local(Montserrat),
-    url(./fonts/Montserrat.ttf);
-  }
-  @font-face {
-    font-family: 'Assistant', sans-serif;
-    src: local(Assistant),
-    url(./fonts/Assistant.ttf);
-  }
   .maintenanceMsg {
     margin-top: 50%;
     height: 100%;
