@@ -1,6 +1,6 @@
 import { createApp, VueElement } from "vue";
 // import App from "./App.vue";
-import App from "./views/Maintenance.vue"
+import App from "./views/Home.vue"
 import router from "./router";
 import "./assets/main.css";
 

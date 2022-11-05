@@ -8,16 +8,19 @@
 <template>
   <header>
     <div>
-      <button class="header_button">David Rollinson</button>
+      <button class="header_button" style="letter-spacing: 3.1ch;">David</button>
     </div>
     <div>
-      <button class="header_button">About</button>
+      <button class="header_button" style="letter-spacing: 1.1ch;">Rollinson</button>
     </div>
     <div>
-      <button class="header_button">Work</button>
+      <button class="header_button" style="letter-spacing: 3.1ch;">About</button>
     </div>
     <div>
-      <button class="header_button">CV</button>
+      <button class="header_button" style="letter-spacing: 4.3ch;">Work</button>
+    </div>
+    <div>
+      <button class="header_button" style="letter-spacing: 9ch;">CV</button>
     </div>
     <div class="wrapper">
       <nav>
@@ -61,15 +64,15 @@ header .header_button {
   background: transparent;
   position: relative;
   cursor: cell;
-  height: auto;
-  border-radius:100%;
+  border-radius:50%;
   border-color: transparent;
+  text-indent: 1ch;
+  width: 15ch;
+  height: 2ch;
   /* sets position in front / behind  */
   z-index: 1;
-  list-style-type: none;
-  padding:5%;
-  padding-block: -30%;
-  margin: 0;
+  padding-left: 5%;
+  margin-left: 0;
   }
 
 header .header_button:hover{
