@@ -3,28 +3,29 @@
 // import HelloWorld from "./components/HelloWorld.vue";
 //import HomeItems from "./components/HomeItems.vue";
 
+import HomeItems from '../components/HomeItems.vue';
 </script>
 
 <template>
   <header>
     <div>
-      <button class="header_button" style="letter-spacing: 3.1ch;">David</button>
+      <!-- style: tag to account for paragraph indent -->
+      <button class="header_button">David<br /><span style="button.header_button">Rollinson</span></button>
     </div>
     <div>
-      <button class="header_button" style="letter-spacing: 1.1ch;">Rollinson</button>
+      <button class="header_button">About</button>
     </div>
     <div>
-      <button class="header_button" style="letter-spacing: 3.1ch;">About</button>
+      <button class="header_button">Work</button>
     </div>
     <div>
-      <button class="header_button" style="letter-spacing: 4.3ch;">Work</button>
-    </div>
-    <div>
-      <button class="header_button" style="letter-spacing: 9ch;">CV</button>
+      <button class="header_button">CV</button>
     </div>
     <div class="wrapper">
       <nav>
-        <!-- <RouterLink to="/">Home</RouterLink> -->
+        <RouterLink to="/">David Rollinson</RouterLink>
+        <RouterLink to="/">About</RouterLink>
+        <RouterLink to="/">CV</RouterLink>
       </nav>
     </div>
   </header>
@@ -32,14 +33,32 @@
   <!-- <RouterView /> -->
 
   <body>
+    <div class="intro_text">
     <h3>
-      My name is David Rollinson (@devushkabeam) and I am a creative technologist and recent Computational Arts graduate from Goldsmiths College. My work is about the material affect of the immaterial. I contextualise the post-internet anxiety of proliferation through generating multimodal artworks operating as sites of slowness and attunement.
-    </h3>
+      David Rollinson is a creative technologist who vitalises spaces and materials with interactive technologies. At the centre of their work in experiential environment design and development are computational systems used to investigate phenomenology and social valuation. Their creative skills readily to hand include experience design, 2D/3D graphical programming, CGI design and animation, custom electronics and creative ML. They recently combined these into a hypermedia installation exhibited at Bargehouse Gallery, Southbank.    </h3>
+  </div>
   </body>
 </template>
 
+<!-- <script>
+  export default {
+    name: 'Counter', 
+    data() {
+      return {
+        count: 3,
+      }
+    },
+    methods: {
+      increment() {
+        this.count += 0.1;
+      }
+    }
+  } 
+</script> -->
+
 <style scoped>
 header {
+  letter-spacing: 3;
   line-height: 1.5;
   max-height: 100vh;
   text-align: left;
@@ -50,15 +69,72 @@ header {
 h3 {
   color: blue;
   font-family: Assistant;
-  font-weight: 100;
   font-size: 20px;
 }
+.intro_text {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60vw;
+}
 
-header .header_button {
+button.header_button {
+  /*text*/
   font-size: 24px;
+  letter-spacing: 2ch;
   font-family: Codystar;
   font-weight:800;
-  text-align: right;
+  text-align: left;
+  text-decoration: none;
+
+  filter: blur(3px);
+
+  /*border*/
+  border: none;
+  border-radius:0%;
+  border-color: transparent;
+
+  /*positioning*/
+  position: relative;
+  text-indent: 1.5ch;
+  height: fit-content;
+  padding-left: 0%;
+  margin-left: 0;
+  max-width: fit-content;
+
+  /*display mode*/
+  display: flex;
+  flex-wrap: wrap;
+
+  /*pointer events*/
+  cursor: cell;
+  pointer-events: all;
+  color: blue;
+  background: transparent;
+  
+  /* sets position in front / behind  */
+  z-index: 1;
+  /* setup transition*/
+  transition: all 0.5s;
+  }
+  button.header_button:hover{
+  background: yellow;
+  border-radius:50%;
+  transition: 1s;
+  padding-left: 5%;
+  max-width: fit-content;
+  filter: blur(0px);
+}
+button.header_button:not(:hover){
+  background: transparent;
+}
+
+
+nav {
+  font-size: 24px;
+  font-family: Codystar;
+  border: none;
+  font-weight:800;
+  text-align: left;
   pointer-events: all;
   color: blue;
   background: transparent;
@@ -73,11 +149,8 @@ header .header_button {
   z-index: 1;
   padding-left: 5%;
   margin-left: 0;
-  }
-
-header .header_button:hover{
-  background: yellow;
 }
+
 
 body {
   line-height: 1.5;
@@ -88,13 +161,15 @@ body {
 
 nav { /*Style the Home Nav Buttons*/
   width: 100%;
-  font-size: 12px;
+  font-size: 24px;
   text-align: center;
   margin-top: 2rem;
+  text-decoration: none;
 }
 
-/* nav a.router-link-exact-active {
+nav a.router-link-exact-active {
   color: var(--color-text);
+  text-decoration: none;
 }
 
 nav a.router-link-exact-active:hover {
@@ -109,7 +184,7 @@ nav a {
 
 nav a:first-of-type {
   border: 0;
-} */
+}
 
 @media (min-width: 1024px) { /* sets the min width of these particular style attributes */
   header {
@@ -122,7 +197,7 @@ nav a:first-of-type {
     margin: 0 2rem 0 0;
   }
 
-  header .wrapper {
+  header.wrapper {
     display: flex;
     place-items: flex-start;
     flex-wrap: wrap;

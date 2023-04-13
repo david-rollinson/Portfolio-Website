@@ -1,4 +1,5 @@
 @import './base.css';
+
 /* import FONTs here to satisfy desktop */
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Codystar:wght@400&family=Montserrat+Alternates:ital,wght@1,400&display=swap');
 
@@ -23,6 +24,7 @@ body {
   font-family: 'Codystar', sans-serif;
   font-family: 'Montserrat Alternates', sans-serif;
   font-family: 'Assistant', sans-serif;
+  font-family: 'Snorter', sans-serif;
   font-weight: normal;
 }
 
@@ -42,4 +44,12 @@ body {
   src: local(Assistant),
   url(./fonts/Assistant.ttf);
 }
+@font-face {
+  font-family: 'Snorter', truetype;
+  src: local(Snorter),
+  url(./fonts/snorter-font/SnorterPersonalUseRegular-p7DPO.ttf);
+}
 
+button .hover > * {
+  cursor: cell;
+}
