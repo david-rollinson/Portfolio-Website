@@ -133,7 +133,7 @@ nav a {
   animation-duration: 7s;
 }
 
-nav a:hover {
+nav a:hover, nav a:active {
   background: yellow;
   border-radius:50%;
   padding-left: 5%;
@@ -192,9 +192,9 @@ nav a.router-link-exact-active:hover {
   nav {
     text-align: left;
     font-size: 1rem;
-
     /* padding: 1rem 0; */
     /* margin-top: 1rem; */
   }
+
 }
 </style>
