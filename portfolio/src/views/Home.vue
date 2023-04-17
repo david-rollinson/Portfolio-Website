@@ -163,9 +163,9 @@ nav a.router-link-exact-active:hover {
 @media (max-width: 1024px) { /* sets the min width of these particular style attributes */
   header {
     display: flex;
-    place-items: center;
+    place-items: left;
     justify-content: flex-start;
-    width: 300px;
+    max-width: 100vw;
     height: fit-content;
   }
 
@@ -173,10 +173,20 @@ nav a.router-link-exact-active:hover {
     margin: 0 2rem 0 0;
   }
 
+  body {
+    text-align: left;
+  }
+
   header.wrapper {
     display: flex;
     place-items: flex-start;
     flex-wrap: wrap;
+  }
+
+  .intro_text {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 75vw;
   }
 
   nav {
