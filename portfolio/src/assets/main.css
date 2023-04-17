@@ -3,15 +3,15 @@
 /* import FONTs here to satisfy desktop */
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Codystar:wght@400&family=Montserrat+Alternates:ital,wght@1,400&display=swap');
 
-/* set a new CURSOR across the whole window */
 html {
   min-height: 100vh;
   max-width: 100vw;
+  /* set a new CURSOR across the whole window */
   cursor: crosshair;
 }
 
 body {
-  min-height: 100vh;
+  max-height: 100vh;
 }
 
 #app {
@@ -33,23 +33,17 @@ body {
   font-family: 'Codystar', sans-serif;
   src: local(Codystar),
   url(./fonts/Codystar.ttf);
-}
-@font-face {
   font-family: 'Montserrat Alternates', sans-serif;
   src: local(Montserrat),
   url(./fonts/Montserrat.ttf);
-}
-@font-face {
   font-family: 'Assistant', sans-serif;
   src: local(Assistant),
   url(./fonts/Assistant.ttf);
-}
-@font-face {
   font-family: 'Snorter', truetype;
   src: local(Snorter),
   url(./fonts/snorter-font/SnorterPersonalUseRegular-p7DPO.ttf);
 }
 
-button .hover > * {
+button {
   cursor: cell;
 }
