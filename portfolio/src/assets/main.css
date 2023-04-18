@@ -1,17 +1,13 @@
 @import './base.css';
 
 /* import FONTs here to satisfy desktop */
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Codystar:wght@400&family=Montserrat+Alternates:ital,wght@1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Codystar:wght@400&display=swap');
 
 html {
   min-height: 100vh;
   max-width: 100vw;
   /* set a new CURSOR across the whole window */
   cursor: crosshair;
-}
-
-body {
-  max-height: 100vh;
 }
 
 #app {
@@ -22,10 +18,114 @@ body {
   /* padding: 2rem; */
   /* Fonts */
   font-family: 'Codystar', sans-serif;
-  font-family: 'Montserrat Alternates', sans-serif;
   font-family: 'Assistant', sans-serif;
-  font-family: 'Snorter', sans-serif;
   font-weight: normal;
+}
+
+/*apply to all nav children*/
+nav > * {
+  /*text*/
+  font-size: 24px;
+  letter-spacing: 2ch;
+  font-family: Codystar;
+  font-weight: 800;
+  text-align: left;
+  text-decoration: none;
+  height: fit-content;
+}
+
+nav a {
+  /*text*/
+  font-size: 24px;
+  letter-spacing: 2ch;
+  font-weight:800;
+  text-align: left;
+  text-decoration: none;
+
+  /*border*/
+  border: none;
+  border-radius:0%;
+  border-color: transparent;
+
+  /*positioning*/
+  position: relative;
+  text-indent: 1.5ch;
+  padding-left: 0%;
+  margin-left: 0;
+  min-width: fit-content;
+
+  /*display mode*/
+  display: flex;
+  flex-wrap: wrap;
+
+  /*pointer events*/
+  cursor: cell;
+  pointer-events: all;
+  color: blue;
+  background: transparent;
+  
+  /* sets position in front / behind  */
+  z-index: 1;
+  /* setup transition*/
+  transition: 0.8s;
+  /*set filter*/
+  filter: blur(3px);
+  /* filter: drop-shadow(0 0 0); */
+
+  /*animation setup*/
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-name: floater;
+  animation-duration: 7s;
+}
+
+nav a:hover {
+  background: yellow;
+  border-radius:50%;
+  padding-left: 5%;
+  max-width: fit-content;
+  filter: blur(0px);
+  filter: drop-shadow(0.2rem 0.2rem 1rem yellow);
+}
+
+/*set animation params*/
+@keyframes floater {
+  from { transform: translate(0,  0px); }
+  35%  { transform: translate(2px, 7px); }
+  65%  { transform: translate(-2px, 15px); }
+  to   { transform: translate(0, -0px); }
+}
+
+header {
+  font-size: 20px;
+  line-height: 1.5;
+  height: fit-content;
+  text-align: left;
+  width: 300px;
+  padding: 24px;
+}
+
+h3 {
+  color: blue;
+  font-weight: 100;
+  font-family: Assistant;
+}
+
+.intro_text {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60vw;
+}
+
+body {
+  min-height: 50vh;
+  max-height: 100vh;
+
+  font-family: Assistant;
+  font-size: 20px;
+
+  line-height: 1.5;
+  text-align: left;
 }
 
 /* import FONTs here to satisfy mobile view */
@@ -33,17 +133,64 @@ body {
   font-family: 'Codystar', sans-serif;
   src: local(Codystar),
   url(./fonts/Codystar.ttf);
-  font-family: 'Montserrat Alternates', sans-serif;
-  src: local(Montserrat),
-  url(./fonts/Montserrat.ttf);
+
   font-family: 'Assistant', sans-serif;
   src: local(Assistant),
   url(./fonts/Assistant.ttf);
-  font-family: 'Snorter', truetype;
-  src: local(Snorter),
-  url(./fonts/snorter-font/SnorterPersonalUseRegular-p7DPO.ttf);
 }
 
 button {
   cursor: cell;
+}
+
+/*Below is for when transferring styles between active classes, i.e. when the router link matches the current page.*/ 
+nav a.router-link-exact-active {
+  padding-left: 20px;
+  filter:blur(0px);
+  transition: 1s;
+}
+/* 
+nav a.router-link-exact-active:hover {
+
+} */
+
+/*set  media rule*/
+@media (max-width: 900px) { /* sets the min width of these particular style attributes */
+  header {
+    display: flex;
+    place-items: left;
+    justify-content: flex-start;
+    max-width: 100vw;
+    height: fit-content;
+  }
+
+  .logo {
+    margin: 0 2rem 0 0;
+  }
+
+  body {
+    text-align: left;
+    font-size: 15px;
+  }
+  header.wrapper {
+    display: flex;
+    place-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  nav {
+    text-align: left;
+    font-size: 1rem;
+    /* padding: 1rem 0; */
+    /* margin-top: 1rem; */
+  }
+
+  nav a {
+    filter: blur(0px);
+  }
+
+  nav a:active {
+    filter: blur(3px);
+  }
+
 }

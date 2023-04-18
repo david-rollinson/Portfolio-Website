@@ -67,15 +67,9 @@ const show = ref(false)
   animation: bounce-in 0.5s;
 }
 @keyframes bounce-in {
-  0% {
-    transform: scale(0);
-  }
-  60% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
+  0% { transform: scale(0); }
+  60% { transform: scale(1.1); }
+  100% { transform: scale(1); }
 }
 
-  </style>
+</style>
