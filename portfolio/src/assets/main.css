@@ -52,7 +52,7 @@ nav a {
   text-indent: 1.5ch;
   padding-left: 0%;
   margin-left: 0;
-  min-width: fit-content;
+  width: fit-content;
 
   /*display mode*/
   display: flex;
@@ -109,23 +109,26 @@ h3 {
   color: blue;
   font-weight: 100;
   font-family: Assistant;
+  font-size: 22px;
 }
 
 .intro_text {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 200px;
   max-width: 60vw;
 }
 
 body {
   min-height: 50vh;
-  max-height: 100vh;
 
   font-family: Assistant;
   font-size: 20px;
 
   line-height: 1.5;
   text-align: left;
+
+  padding-bottom: 5vh;
 }
 
 /* import FONTs here to satisfy mobile view */
@@ -149,13 +152,21 @@ nav a.router-link-exact-active {
   filter:blur(0px);
   transition: 1s;
 }
-/* 
-nav a.router-link-exact-active:hover {
 
-} */
+
+nav a.router-link-exact-active:hover {
+  background: white;
+  filter: drop-shadow(0.2rem 0.2rem 1rem aliceblue);
+}
 
 /*set  media rule*/
-@media (max-width: 900px) { /* sets the min width of these particular style attributes */
+@media (max-width: 900px) {
+
+  #app {
+    /*turn off overflow throughout the app*/
+    overflow: hidden;
+  }
+
   header {
     display: flex;
     place-items: left;
@@ -168,10 +179,15 @@ nav a.router-link-exact-active:hover {
     margin: 0 2rem 0 0;
   }
 
+  h3 {
+    font-size: 20px;
+  }
+
   body {
     text-align: left;
-    font-size: 15px;
+    font-size: 18px;
   }
+
   header.wrapper {
     display: flex;
     place-items: flex-start;
@@ -181,12 +197,11 @@ nav a.router-link-exact-active:hover {
   nav {
     text-align: left;
     font-size: 1rem;
-    /* padding: 1rem 0; */
-    /* margin-top: 1rem; */
   }
 
   nav a {
     filter: blur(0px);
+    text-indent: 0ch;
   }
 
   nav a:active {
