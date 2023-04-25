@@ -18,16 +18,7 @@
   <body>
     <div class="container">
     <div class="projects">
-        <RouterLink class="grid_item" style="cursor:cell" v-for="project in projects"
-        :key="project.id" 
-        :to="{name: 'project.show', params:{slug: project.slug, id: project.id}}"
-        > <!--go to the project.show route as set in index.js-->
-        <!-- <h2>{{ project.name }}</h2> -->
-        <img :src="project.image" style="max-width: 20vw; height: auto;"/>
-        <!-- template including image file, and brief description preview? -->
-        <!-- <h1>{{ project.description }}</h1> -->
-
-      </RouterLink> <!--set unique identifier key for each project passed over - enabling vue to keep track of variables-->
+      <h3>Coming soon...</h3>
   </div>
 </div>
   </body>
