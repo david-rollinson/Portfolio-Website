@@ -4,21 +4,11 @@ import Work from "@/views/Work.vue";
 import About from "@/views/About.vue";
 
 const routes = [
-  {
-    path: "/",
-    name: "Home",
-    component: Home,
-  },
-  {
-    path: "/work",
-    name: "Work",
-    component: Work,
-  },
-  {
-    path: "/about",
-    name: "About",
-    component: About,
-  }
+  { path: "/", name: "Home", component: Home},
+  { path: "/work", name: "Work", component: Work},
+  { path: "/about", name: "About", component: About},
+  //pass the project id over to the component.
+  { path: '/work/:id/:slug', name: 'project.show', component: ()=>import('@/views/DisplayDest.vue'), props: route=> ({id: parseInt(route.params.id)}) }
 ]
 
 const router = createRouter({

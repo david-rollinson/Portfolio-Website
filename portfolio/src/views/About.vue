@@ -6,7 +6,7 @@
   <body>
     <div class="intro_text">
     <h3>
-    Coming soon...
+    All enquiries: davrc . me @ gmail . com 
     </h3>
   </div>
   </body>

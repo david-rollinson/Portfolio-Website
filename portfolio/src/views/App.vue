@@ -1,4 +1,22 @@
 <!-- SPA: here we're only changing views -->
+<template>
+  <header>
+    <div class="wrapper">
+      <TheNavigation/>
+    </div>
+  </header>
+    <!-- Always renders the contents of the active page. -->
+    <!---alter the key to rerender the component inside routerview--->
+    <RouterView :key="$route.path"></RouterView>
+</template>
+
+<script>
+import TheNavigation from '@/components/TheNavigation.vue'
+
+export default{
+  components: {TheNavigation}
+}
+</script>
 
 <script setup>
 import { ref, computed } from 'vue'
@@ -12,19 +30,3 @@ const currentView = computed(() => {
   return routes[currentPath.value.slice(1) || '/'] || NotFound
 })
 </script>
-
-<template>
-  <header>
-    <div class="wrapper">
-      <nav onclick>
-         <!-- 'style:' tag to account for paragraph indent -->
-        <RouterLink to="/">David<span style="nav a">Rollinson</span></RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/work">Work</RouterLink>
-        <RouterLink to="/cv">CV</RouterLink>
-      </nav>
-    </div>
-  </header>
-    <!-- Always renders the contents of the active page. -->
-    <RouterView></RouterView>
-</template>

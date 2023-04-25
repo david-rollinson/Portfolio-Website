@@ -133,13 +133,11 @@ body {
 
 /* import FONTs here to satisfy mobile view */
 @font-face {
-  font-family: 'Codystar', sans-serif;
-  src: local(Codystar),
-  url(./fonts/Codystar.ttf);
+  font-family: 'Codystar';
+  src: local(Codystar),  url(./fonts/Codystar.ttf);
 
-  font-family: 'Assistant', sans-serif;
-  src: local(Assistant),
-  url(./fonts/Assistant.ttf);
+  font-family: 'Assistant';
+  src: local(Assistant),  url(./fonts/Assistant.ttf);
 }
 
 button {
@@ -157,6 +155,10 @@ nav a.router-link-exact-active {
 nav a.router-link-exact-active:hover {
   background: white;
   filter: drop-shadow(0.2rem 0.2rem 1rem aliceblue);
+}
+
+router-link > * {
+  cursor: cell;
 }
 
 /*set  media rule*/
