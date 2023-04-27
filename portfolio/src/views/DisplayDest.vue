@@ -1,10 +1,15 @@
 <template>
     <section class="project">
     <div>
-        <h3>{{ project.name }}</h3>
+        <!-- <h3>{{ project.name }}</h3> -->
         <div class = "details">
-            <h3>{{ project.description }}</h3>
+            <!-- <h3>{{ project.description }}</h3> -->
         </div>
+    </div>
+    <div class="intro_text">
+    <h3>
+        More details coming soon...
+    </h3>
     </div>
 </section>
 </template>
