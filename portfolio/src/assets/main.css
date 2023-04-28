@@ -216,4 +216,18 @@ router-link > * {
     max-width: 75vw;
   }
 
+  nav a.router-link-exact-active {
+    background: yellow;
+    border-radius:50%;
+    padding-left: 5%;
+    max-width: fit-content;
+    filter: blur(0px);
+    filter: drop-shadow(0.2rem 0.2rem 1rem yellow);
+}
+
+  nav a.router-link-exact-active:hover {
+  background: yellow;
+  filter: drop-shadow(0 0 0 transparent);
+}
+
 }

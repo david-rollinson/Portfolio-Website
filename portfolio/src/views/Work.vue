@@ -122,7 +122,11 @@
 }
 .content_img {
   width: 70vw;
-  vertical-align: bottom;
 }
+
+.content_img:hover {
+  transform: scale(1);
+}
+
 }
 </style>
