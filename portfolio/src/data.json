@@ -19,29 +19,29 @@
             "description": "this is an example of the system.",
             "image": "https://file.notion.so/f/s/ba665e87-3593-469b-8dd6-baf3e4fa32e0/Circular.gif?id=188d402c-e657-491a-92c9-5dc50dc7e80c&table=block&spaceId=b98cd729-48f8-4c4a-a2df-92bf3e006b5b&expirationTimestamp=1682708744660&signature=sXW0-JEa2xHk8Vux58DGDOwhjCvaU--baBxrsCbuZqg" 
         },         {
-            "name": "Ephemerence Exhibition",
-            "slug": "ephemerence",
-            "id": 4,
-            "description": "this is an example of the system.",
-            "image": "https://droll002.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F95909540-6eb1-4c27-8a9e-3193fb2fd292%2Fposter_snippet.png?table=block&id=18a36766-258d-4fa8-85dc-97ca1270ab0b&spaceId=b98cd729-48f8-4c4a-a2df-92bf3e006b5b&width=2000&userId=&cache=v2"
-        },         {
             "name": "COUNDUIT",
             "slug": "conduit",
-            "id": 5,
+            "id": 4,
             "description": "this is an example of the system.",
             "image": "https://droll002.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb056e731-54d5-409b-ac42-d8cc60816672%2F1-2.jpg?table=block&id=008c56e4-33bb-483d-9111-c119a9569668&spaceId=b98cd729-48f8-4c4a-a2df-92bf3e006b5b&width=2000&userId=&cache=v2"
         },         {
-            "name": "Machine Learning Sketches",
-            "slug": "creativeml",
-            "id": 6,
+            "name": "Blender CGI",
+            "slug": "blender",
+            "id": 5,
             "description": "this is an example of the system.",
-            "image": "https://droll002.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F320e440c-4153-4bed-bca9-fd86cc28d961%2Fpnp2p_crop.jpg?table=block&id=68d841cb-eeaf-4ff5-b247-435c9443c53c&spaceId=b98cd729-48f8-4c4a-a2df-92bf3e006b5b&width=2000&userId=&cache=v2"
+            "image": "https://droll002.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F4bc9b658-9b14-4b62-840d-0f68c56490b5%2Fobliterate_edit.png?table=block&id=421db6a9-0b16-4786-b1a9-d62267c3eee6&spaceId=b98cd729-48f8-4c4a-a2df-92bf3e006b5b&width=2000&userId=&cache=v2"
         },         {
             "name": "Lightning Neural Inpainting",
             "slug": "neuralinpaint",
-            "id": 7,
+            "id": 6,
             "description": "this is an example of the system.",
             "image": "https://file.notion.so/f/s/0d9dbcee-ba52-4f5f-9599-284430a540bf/panning1.gif?id=ea3983c9-bb4d-464a-81bb-e2badd7a8f7f&table=block&spaceId=b98cd729-48f8-4c4a-a2df-92bf3e006b5b&expirationTimestamp=1682708998219&signature=9e9vgWVggVmjbdxIqRIr6Y7ksi10egQwvJ5nPUK4dBc"
+        },         {
+            "name": "Machine Learning Sketches",
+            "slug": "creativeml",
+            "id": 7,
+            "description": "this is an example of the system.",
+            "image": "https://droll002.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F320e440c-4153-4bed-bca9-fd86cc28d961%2Fpnp2p_crop.jpg?table=block&id=68d841cb-eeaf-4ff5-b247-435c9443c53c&spaceId=b98cd729-48f8-4c4a-a2df-92bf3e006b5b&width=2000&userId=&cache=v2"
         },         {
             "name": "Exquisite Horse",
             "slug": "exquisitehorse",
@@ -55,11 +55,11 @@
             "description": "this is an example of the system.",
             "image": "https://droll002.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F726d7f9a-48d8-43f2-b4df-8572b8445814%2FScreenshot_2023-01-18_at_15.54.14.png?table=block&id=c79611a0-1f50-4327-a4af-47548bbed5b3&spaceId=b98cd729-48f8-4c4a-a2df-92bf3e006b5b&width=1250&userId=&cache=v2"
         },         {
-            "name": "Blender CGI",
-            "slug": "blender",
+            "name": "Ephemerence Exhibition",
+            "slug": "ephemerence",
             "id": 10,
             "description": "this is an example of the system.",
-            "image": "https://droll002.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F4bc9b658-9b14-4b62-840d-0f68c56490b5%2Fobliterate_edit.png?table=block&id=421db6a9-0b16-4786-b1a9-d62267c3eee6&spaceId=b98cd729-48f8-4c4a-a2df-92bf3e006b5b&width=2000&userId=&cache=v2"
+            "image": "https://droll002.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F95909540-6eb1-4c27-8a9e-3193fb2fd292%2Fposter_snippet.png?table=block&id=18a36766-258d-4fa8-85dc-97ca1270ab0b&spaceId=b98cd729-48f8-4c4a-a2df-92bf3e006b5b&width=2000&userId=&cache=v2"
         },         {
             "name": "Hypermedia Games",
             "slug": "games",
