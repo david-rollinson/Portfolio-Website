@@ -88,6 +88,10 @@ nav a:hover {
   filter: drop-shadow(0.2rem 0.2rem 1rem yellow);
 }
 
+a:hover {
+  cursor: cell;
+}
+
 /*set animation params*/
 @keyframes floater {
   from { transform: translate(0,  0px); }

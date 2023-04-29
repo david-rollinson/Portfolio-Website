@@ -53,7 +53,8 @@
         <!-- <h2>{{ project.name }}</h2> -->
         <div class="image_border">
         <div class="image_container">
-        <img :src="project.image" class="content_img" ref="content_ref"/>
+        <img :src="project.image" class="content_img" rel="preload"/> 
+        <!-- select from an array of props? -->
         </div>
         </div>
         <!-- template including image file, and brief description preview? -->
@@ -144,7 +145,8 @@ body {
   --m-image-height: calc(var(--m-image-width)*0.66);
   --m-grid-height: calc((var(--m-image-height) + 2vw));
   }
-.container {
+
+.grid_container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -155,6 +157,7 @@ body {
   row-gap: 60px;
   justify-items: center;
   margin-bottom: 200px;
+  align-items: end;
 }
 
 .image_container {
@@ -176,7 +179,6 @@ body {
   margin-top: 10px;
   opacity: 1;
 }
-
 
 .content_img:hover {
   transform: scale(1);
