@@ -1,6 +1,6 @@
 <script>
   import { ref, onUnmounted, onMounted } from "vue";
-  import sourceData from '@/data.json'
+  import sourceData from '@/data_copy.json'
   export default {
     data() {
       return {
@@ -31,6 +31,16 @@
         this.offsetX = 50;
         this.offsetY = 50;
       }
+    },
+    props: {
+      imageUrl: {
+        type: String,
+        required: true
+      },
+      isImageLoaded: {
+        type: Boolean,
+        required: true
+      }
     }
 }
 
@@ -38,6 +48,7 @@
 
 <template>
   <header>
+    <img v-if="isImageLoaded" :src="imageUrl" />
   </header>
 
   <body>
@@ -53,7 +64,7 @@
         <!-- <h2>{{ project.name }}</h2> -->
         <div class="image_border">
         <div class="image_container">
-        <img :src="project.image" class="content_img" rel="preload"/> 
+        <img :src="`/images/${project.image}`" class="content_img" rel="preload"/> 
         <!-- select from an array of props? -->
         </div>
         </div>
