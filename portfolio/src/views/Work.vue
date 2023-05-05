@@ -1,6 +1,6 @@
 <script>
   import { ref, onUnmounted, onMounted } from "vue";
-  import sourceData from '@/data_copy.json'
+  import sourceData from '@/data.json'
   export default {
     data() {
       return {
@@ -33,12 +33,16 @@
       }
     },
     props: {
-      imageUrl: {
-        type: String,
-        required: true
-      },
-      isImageLoaded: {
-        type: Boolean,
+      // imageUrl: {
+      //   type: String,
+      //   required: true
+      // },
+      // isImageLoaded: {
+      //   type: Boolean,
+      //   required: true
+      // }
+      newImages: {
+        type: Array,
         required: true
       }
     }
@@ -48,10 +52,13 @@
 
 <template>
   <header>
-    <img v-if="isImageLoaded" :src="imageUrl" />
   </header>
 
   <body>
+     <!-- <img v-if="isImageLoaded" :src="imageUrl" /> -->
+    <!-- <div v-for="imageSrc in newImages" style="display: inline-block;">
+    <img v-bind:src="imageSrc" class="content_img" style="width: 200px;">
+    </div> -->
     <div class="grid_container">
     <div class="projects">
         <RouterLink class="grid_item" style="cursor:cell" v-for="project in projects"
@@ -64,7 +71,7 @@
         <!-- <h2>{{ project.name }}</h2> -->
         <div class="image_border">
         <div class="image_container">
-        <img :src="`/images/${project.image}`" class="content_img" rel="preload"/> 
+        <img :src="project.image" class="content_img" rel="preload"/> 
         <!-- select from an array of props? -->
         </div>
         </div>
