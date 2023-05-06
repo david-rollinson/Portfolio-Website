@@ -19,13 +19,15 @@ import TheNavigation from '@/components/TheNavigation.vue'
 import sourceData from '@/data.json'
 
 export default{
-  components: {TheNavigation},
+  components: {
+    TheNavigation
+  },
   data() {
     return {
       projects: sourceData.projects,
       newImages: [],
       imageUrl: "https://droll002.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F95d5490b-971b-4f54-9dbb-7d6b041d97a8%2F4.jpg?table=block&id=5ad76f8f-b7e4-4306-8317-b68e79c3e6a7&spaceId=b98cd729-48f8-4c4a-a2df-92bf3e006b5b&width=2000&userId=&cache=v2",
-      isImageLoaded: false
+      isImageLoaded: false,
     }
   }, 
   methods: {
