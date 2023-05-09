@@ -1,7 +1,7 @@
 <script>
   import { ref, onUnmounted, onMounted } from "vue";
-  import sourceData from '@/data.json'
-  export default {
+  import sourceData from '@/data_copy.json'
+  export default{
     data() {
       return {
         projects: sourceData.projects,
@@ -32,6 +32,9 @@
         this.offsetY = 50;
       }
     },
+    mounted() {
+      // console.log(this.newImages);
+    },
     props: {
       // imageUrl: {
       //   type: String,
@@ -61,7 +64,7 @@
     </div> -->
     <div class="grid_container">
     <div class="projects">
-        <RouterLink class="grid_item" style="cursor:cell" v-for="project in projects"
+        <RouterLink class="grid_item" style="cursor:cell" v-for="project in projects" 
         :key="project.id" 
         :to="{name: 'project.show', params:{slug: project.slug, id: project.id}}"
         @mouseenter="mouseEnter" 
@@ -71,13 +74,13 @@
         <!-- <h2>{{ project.name }}</h2> -->
         <div class="image_border">
         <div class="image_container">
-        <img :src="project.image" class="content_img" rel="preload"/> 
+        <!--access the newImages array, use project id -1 to account for 0 based array counting-->
+        <img :src="newImages[project.id - 1]" class="content_img" rel="preload"/> 
         <!-- select from an array of props? -->
         </div>
         </div>
         <!-- template including image file, and brief description preview? -->
         <h3 class="name">{{ project.name }}</h3>
-
       </RouterLink> <!--set unique identifier key for each project passed over - enabling vue to keep track of variables-->
   </div>
 </div>

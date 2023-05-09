@@ -14,6 +14,7 @@
     <br><a href="https://linkedin.com/in/rollinson-david" target="_blank" rel="noreferrer noopener">LinkedIn</a>
     <p></p>
     <a href="https://droll002.notion.site/David-Rollinson-Compiled-Info-077934589fbe40f79015748231abe307" target="_blank" rel="noreferrer noopener">Previous Site (now defunct)</a>
+    <p>This website is an ongoing project, created in Vue.js.</p>
   </h3>
     
   </div>
