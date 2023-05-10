@@ -66,7 +66,7 @@
     <div class="projects">
         <RouterLink class="grid_item" style="cursor:cell" v-for="project in projects" 
         :key="project.id" 
-        :to="{params:{slug: project.slug, id: project.id}, name: 'project.' + project.id}"
+        :to="{name: 'project.show', params:{slug: project.slug, id: project.id}}"
         @mouseenter="mouseEnter" 
         @mousemove="mouseMove" 
         @mouseleave="mouseLeave"
