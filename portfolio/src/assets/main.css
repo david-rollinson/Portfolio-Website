@@ -175,7 +175,6 @@ router-link > * {
 
   header {
     display: flex;
-    place-items: left;
     justify-content: flex-start;
     max-width: 100vw;
     height: fit-content;
@@ -196,7 +195,6 @@ router-link > * {
 
   header.wrapper {
     display: flex;
-    place-items: flex-start;
     flex-wrap: wrap;
   }
 

@@ -8,7 +8,7 @@
     </div>
     <div class="intro_text">
     <h3>
-        More details coming soon...
+        <span style="font-weight: 600;">Back-end </span>still in development. More details coming soon...
     </h3>
     </div>
 </section>
@@ -16,6 +16,8 @@
 
 <script>
 import sourceData from '@/data.json'
+import axios from 'axios';
+
 export default {
     props: {
         id: {type: Number, required:true}
@@ -25,6 +27,11 @@ export default {
         project() {
             return sourceData.projects.find(project => project.id === this.id)
         }
+    },
+    mounted() {
+        axios.get('http://localhost:1337/api/articles').then(response => {
+        console.log(response);
+        });
     }
 }
 </script>

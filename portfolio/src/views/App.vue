@@ -11,6 +11,7 @@
     <!-- <RouterView :key="$route.path" v-bind="$route.path=='/work' ? {isImageLoaded, imageUrl} : {}"></RouterView> -->
     <RouterView :key="$route.path" v-bind="$route.path=='/work' ? {newImages} : {}"></RouterView>
     <!-- <RouterView :key="$route.path"></RouterView> -->
+    <!--Random idea - implement konami code as fun easteregg?-->
 </template>
 
 
