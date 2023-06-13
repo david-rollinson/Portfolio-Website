@@ -1,6 +1,6 @@
 <script>
   import { ref, onUnmounted, onMounted } from "vue";
-  import sourceData from '@/data_copy.json'
+  import sourceData from '@/data.json'
   export default{
     data() {
       return {
