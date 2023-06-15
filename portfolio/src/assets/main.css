@@ -109,6 +109,12 @@ header {
   padding: 24px;
 }
 
+h2 {
+  color: blue;
+  font-weight: 800;
+  font-family: Codystar;
+}
+
 h3 {
   color: blue;
   font-weight: 100;
@@ -117,6 +123,15 @@ h3 {
 }
 
 .intro_text {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 200px;
+  max-width: 60vw;
+}
+
+.about_text {
+  display: block;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 200px;

@@ -1,22 +1,12 @@
-# ‘Cyclops Retina, Light Barrier 2.4’ — Kimchi & Chips with Rosa Menkman
+Artist Assistance for Studio Kimchi and Chips with Rosa Menkman at Thin Air, The Beams. Exhibition displayed March - June 2023. Responsibilities: graphics generation, development and rendering, calibration assistance, runner.
 
-Tags: 2D, 3D, Abobe Creative Suite, Artwork, Blender, GLSL, Team Working
+<div class="mkd_img"> 
 
-**Artist Assistance for Studio Kimchi and Chips with Rosa Menkman at THIN AIR, The Beams.** 
+|![Installation image, 2023 - Cyclops Retina, Light Barrier 2.4 © The Beams, Centre for New Culture. ](https://thebeamslondon.com/app/uploads/2022/06/sc-01383-2048x1365.jpg)|
+|:--:| 
+|Installation image, 2023 - Cyclops Retina, Light Barrier 2.4 © The Beams, Centre for New Culture.|
 
-Responsibilities: graphics generation, development and rendering, calibration assistance, runner. 
-
-### **Contents:**
-
-[**Demo Footage: (currently undergoing updates)**](https://www.notion.so/Demo-Footage-currently-undergoing-updates-627bc5e685c047eab14c2251f471c7cc?pvs=21) 
-
-[**Technical Explanation:**](https://www.notion.so/Technical-Explanation-8429805334cc48c3ad6bd1e73eb13f1d?pvs=21) 
-
-[Prototyping imagery:](https://www.notion.so/Prototyping-imagery-56e98741406b4fe48d16cc05568e8b1a?pvs=21) 
-
-![Installation image, 2023 - Cyclops Retina, Light Barrier 2.4 © The Beams, Centre for New Culture. ](https://thebeamslondon.com/app/uploads/2022/06/sc-01383-2048x1365.jpg)
-
-Installation image, 2023 - Cyclops Retina, Light Barrier 2.4 © The Beams, Centre for New Culture. 
+</div>
 
 I assisted Elliot Woods (of Kimchi and Chips) and Rosa Menkman with calibration of their curved mirror array installation, and the development of film for use in the final projection. ***Scroll down for a closer look* ↓**
 

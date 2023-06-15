@@ -12,6 +12,10 @@
     <RouterView :key="$route.path" v-bind="$route.path=='/work' ? {newImages} : {}"></RouterView>
     <!-- <RouterView :key="$route.path"></RouterView> -->
     <!--Random idea - implement konami code as fun easteregg?-->
+
+    <div class="marquee">
+      <!-- <p>@devushkabeam</p> -->
+    </div>
 </template>
 
 
@@ -68,3 +72,52 @@ const currentView = computed(() => {
   return routes[currentPath.value.slice(1) || '/'] || NotFound
 })
 </script>
+
+<style>
+
+.marquee {
+  background: blue;
+  position: fixed;
+  width: 100%;
+  max-height: 100px;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  /* filter: drop-shadow(0 0rem 4rem blue); */
+  overflow: hidden;
+  /* animation: glow-opacity 15s cubic-bezier(0, 0.1, 1, 0.8) infinite; */
+}
+
+.marquee p {
+  font-family: 'Codystar';
+  margin: 0;
+  font-size: 3ch;
+  color: white;
+  position: relative;
+  transform: translateX(100%);
+  animation: scroll-left 15s linear infinite;
+}
+
+@keyframes scroll-left {
+  0%  {
+    transform: translateX(100%);
+  }
+  100%  {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes glow-opacity {
+  0%  {
+    opacity: 0.8;
+  }
+  50%  {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+</style>

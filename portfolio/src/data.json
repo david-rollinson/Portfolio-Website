@@ -1,56 +1,56 @@
 {
     "projects": [
         {
-            "name": "Cyclops Retina - Studio Kimchi & Chips",
+            "name": "Cyclops Retina - Studio Kimchi & Chips.",
             "slug": "cyclopsretina",
             "id": 1,
             "description": "Cyclops Retina, Light Barrier 2.4",
             "image": "https://thebeamslondon.com/app/uploads/2022/06/sc-01383-2048x1365.jpg",
             "template": "/lib/cyclops_retina.md"
         },         {
-            "name": "Pool (Orientation 1)",
+            "name": "Pool (Orientation 1).",
             "slug": "pool",
             "id": 2,
             "description": "this is an example of the system.",
             "image": "https://droll002.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F95d5490b-971b-4f54-9dbb-7d6b041d97a8%2F4.jpg?table=block&id=5ad76f8f-b7e4-4306-8317-b68e79c3e6a7&spaceId=b98cd729-48f8-4c4a-a2df-92bf3e006b5b&width=2000&userId=&cache=v2",
             "template": "/lib/pool_orientation.md"
         },         {
-            "name": "StyleGAN Hollow Face Illusion",
+            "name": "StyleGAN Hollow Face Illusion.",
             "slug": "hollowfaceillusion",
             "id": 3,
             "description": "this is an example of the system.",
             "image": "https://file.notion.so/f/s/ba665e87-3593-469b-8dd6-baf3e4fa32e0/Circular.gif?id=188d402c-e657-491a-92c9-5dc50dc7e80c&table=block&spaceId=b98cd729-48f8-4c4a-a2df-92bf3e006b5b&expirationTimestamp=1683405793027&signature=eqQMfeZgog5VQZN7-PvsWTLSbmicuChsQa3B2_WMmvo",
             "template": "/lib/stylegan_2.md"
         },         {
-            "name": "COUNDUIT",
+            "name": "COUNDUIT.",
             "slug": "conduit",
             "id": 4,
             "description": "this is an example of the system.",
             "image": "https://droll002.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb056e731-54d5-409b-ac42-d8cc60816672%2F1-2.jpg?table=block&id=008c56e4-33bb-483d-9111-c119a9569668&spaceId=b98cd729-48f8-4c4a-a2df-92bf3e006b5b&width=2000&userId=&cache=v2",
             "template": "/lib/conduit.md"
         },         {
-            "name": "Blender CGI",
+            "name": "Blender CGI.",
             "slug": "blender",
             "id": 5,
             "description": "this is an example of the system.",
             "image": "https://droll002.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F4bc9b658-9b14-4b62-840d-0f68c56490b5%2Fobliterate_edit.png?table=block&id=421db6a9-0b16-4786-b1a9-d62267c3eee6&spaceId=b98cd729-48f8-4c4a-a2df-92bf3e006b5b&width=2000&userId=&cache=v2",
             "template": "/lib/cgi_collection.md"
         },         {
-            "name": "Lightning Neural Inpainting",
+            "name": "Lightning Neural Inpainting.",
             "slug": "neuralinpaint",
             "id": 6,
             "description": "this is an example of the system.",
             "image": "https://file.notion.so/f/s/0d9dbcee-ba52-4f5f-9599-284430a540bf/panning1.gif?id=ea3983c9-bb4d-464a-81bb-e2badd7a8f7f&table=block&spaceId=b98cd729-48f8-4c4a-a2df-92bf3e006b5b&expirationTimestamp=1683405793027&signature=8Hlgw983SDx3Dh4TH7H3-NbiUZX5H_4U22dv_F1J50Y",
             "template": "/lib/neural_inpainting.md"
         },         {
-            "name": "Machine Learning Sketches",
+            "name": "Machine Learning Sketches.",
             "slug": "creativeml",
             "id": 7,
             "description": "this is an example of the system.",
             "image": "https://droll002.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F320e440c-4153-4bed-bca9-fd86cc28d961%2Fpnp2p_crop.jpg?table=block&id=68d841cb-eeaf-4ff5-b247-435c9443c53c&spaceId=b98cd729-48f8-4c4a-a2df-92bf3e006b5b&width=2000&userId=&cache=v2",
             "template": "/lib/machine_learning.md"
         },         {
-            "name": "Exquisite Horse",
+            "name": "Exquisite Horse.",
             "slug": "exquisitehorse",
             "id": 8,
             "description": "this is an example of the system.",

@@ -6,8 +6,8 @@
         </div>
     </div>
     <div class="intro_text">
-    <h3>{{ project.name }}</h3>
-    <div v-html="dataToParse"></div>
+    <h2>{{ project.name }}</h2>
+    <div v-html="dataToParse" class="markdown_wrapper"></div>
     </div>
 </section>
 </template>
@@ -50,3 +50,27 @@ export default {
     }
 }
 </script>
+
+<style>
+
+.markdown_wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 200px;
+  max-width: 60vw;
+  overflow: hidden;
+  font-weight: 100;
+}
+
+.mkd_img {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 15px
+}
+
+.mkd_img img {
+    width: 600px;
+}
+
+</style>
