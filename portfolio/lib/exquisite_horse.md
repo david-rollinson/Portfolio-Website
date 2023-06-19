@@ -1,6 +1,4 @@
-# Graphics Systems in Processing.
-
-Tags: 2D, Artwork, Blender, Java, Processing, Skanect Pro
+<!--- Tags: 2D, Artwork, Blender, Java, Processing, Skanect Pro
 
 Graphics work for 2023 online zine currently in development.
 
@@ -16,21 +14,7 @@ Alongside this project, I developed a tool for quickly testing different ditheri
 
 ***Scroll down for a closer look* ↓**
 
-[(Before) - no raster, dither or colour filter applied. 3D scanned horse toy using XBox Kinect, simple UV texture colouring in Blender. ](Graphics%20Systems%20in%20Processing%20d51ad204e94c457f88e61e459099b736/horse_colour.mp4)
-
-(Before) - no raster, dither or colour filter applied. 3D scanned horse toy using XBox Kinect, simple UV texture colouring in Blender. 
-
-[Rasterised. Monochrome on black.](Graphics%20Systems%20in%20Processing%20d51ad204e94c457f88e61e459099b736/horse.mp4)
-
-Rasterised. Monochrome on black.
-
-[Rasterised, with ordered dithering in x-axis only. ](Graphics%20Systems%20in%20Processing%20d51ad204e94c457f88e61e459099b736/glitch.mp4)
-
-Rasterised, with ordered dithering in x-axis only. 
-
-Final result:
-
-[(After) Rasterised, with ordered dithering bayer matrix and mono filter, all in Processing 4.](Graphics%20Systems%20in%20Processing%20d51ad204e94c457f88e61e459099b736/yb8x8.mp4)
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/837714108?h=52b588793b" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
 
 (After) Rasterised, with ordered dithering bayer matrix and mono filter, all in Processing 4.
 
@@ -42,4 +26,5 @@ The repository for the **dithering tool** can be found [here](https://github.com
 
 [Processing-Repo/dithering_examples at main · david-rollinson/Processing-Repo](https://github.com/david-rollinson/Processing-Repo/tree/main/dithering_examples)
 
-[← Home](https://www.notion.so/David-Rollinson-Compiled-Info-077934589fbe40f79015748231abe307?pvs=21)
+[← Home](https://www.notion.so/David-Rollinson-Compiled-Info-077934589fbe40f79015748231abe307?pvs=21) --->
+Coming soon.

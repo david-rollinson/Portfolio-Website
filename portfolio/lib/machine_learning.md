@@ -1,6 +1,4 @@
-# Machine Learning Sketches.
-
-Tags: API, Google Teachable Machine, HTML, Javascript, ML
+<!--- Tags: API, Google Teachable Machine, HTML, Javascript, ML
 
 **A collection of Machine Learning browser application demos.** 
 
@@ -48,4 +46,5 @@ The Google Teachable Machine sound classification model that I trained can be vi
 
 Screenshot during Google Teachable Machine sound classifier training process.
 
-[← Home](https://www.notion.so/David-Rollinson-Compiled-Info-077934589fbe40f79015748231abe307?pvs=21)
+[← Home](https://www.notion.so/David-Rollinson-Compiled-Info-077934589fbe40f79015748231abe307?pvs=21) --->
+Coming soon. 

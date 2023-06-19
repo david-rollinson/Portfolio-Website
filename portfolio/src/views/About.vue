@@ -14,7 +14,7 @@
     <a href="https://linkedin.com/in/rollinson-david" target="_blank" rel="noreferrer noopener">LinkedIn</a> |
     <a href="https://droll002.notion.site/David-Rollinson-Compiled-Info-077934589fbe40f79015748231abe307" target="_blank" rel="noreferrer noopener">Prev. Site (defunct)</a>
     <br>
-    <span style="position: relative; top: 30vh; margin: 0; left: 0; right: 0; overflow: visible;">This website is an ongoing project, created in Vue.js.</span>
+    <span style="position: relative; top: 30vh; margin: 0; left: 0; right: 0; overflow: visible; font-size: 15px;">This website is an ongoing project, created in Vue.js.</span>
   </h3>
   </div>
   </body>

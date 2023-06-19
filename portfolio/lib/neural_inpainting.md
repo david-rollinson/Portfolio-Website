@@ -1,6 +1,4 @@
-# Lightning Neural Inpainting with Pix2Pix (TensorFlow).
-
-Tags: 2D, Artwork, Javascript, ML, Python
+<!--- Tags: 2D, Artwork, Javascript, ML, Python
 
 ![Demo gif rendered in Processing, assembled in Photoshop CC.](Lightning%20Neural%20Inpainting%20with%20Pix2Pix%20(TensorFl%20e369a44194184905bd1cd7a14bff4106/panning1.gif)
 
@@ -54,4 +52,6 @@ Demo gif, assembled in Photoshop CC.
 
 I wrote a javascript sketch which cycles through the dataset of lightning images and sporadically applies a white box for the neural network to inpaint. By clicking, the user can stop the sketch and press ENTER to apply the neural inpainting effect. 
 
-[← Home](https://www.notion.so/David-Rollinson-Compiled-Info-077934589fbe40f79015748231abe307?pvs=21)
+[← Home](https://www.notion.so/David-Rollinson-Compiled-Info-077934589fbe40f79015748231abe307?pvs=21) --->
+
+Coming soon. 
