@@ -44,8 +44,9 @@ export default {
     methods: {
         async markdownToHtml(_id){
         if(sourceData.projects[_id-1].template != "") { //check if there is data to load. 
-            let newContent = await fetch(sourceData.projects[_id-1].template).then( response => response.text() ).then(r => marked.parse(r)).then(r => DOMPurify.sanitize(r));
-            // console.log(newContent); //check if promise fulfilled. 
+            let newContent = await fetch(sourceData.projects[_id-1].template).then( response => response.text() ).then(r => marked.parse(r));
+            console.log(sourceData.projects[_id-1].template);
+            console.log(newContent); //check if promise fulfilled. 
             this.dataToParse = newContent;
         }
         }
