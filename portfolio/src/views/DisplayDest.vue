@@ -17,6 +17,7 @@
 import sourceData from '@/data.json'
 import axios from 'axios';
  import { marked } from 'marked';
+ import DOMPurify from 'dompurify'
 
 export default {
     props: {
@@ -43,7 +44,7 @@ export default {
     methods: {
         async markdownToHtml(_id){
         if(sourceData.projects[_id-1].template != "") { //check if there is data to load. 
-            let newContent = await fetch(sourceData.projects[_id-1].template).then( response => response.text() ).then(r => marked.parse(r));
+            let newContent = await fetch(sourceData.projects[_id-1].template).then( response => response.text() ).then(r => marked.parse(r)).then(r => DOMPurify.sanitize(r));
             // console.log(newContent); //check if promise fulfilled. 
             this.dataToParse = newContent;
         }

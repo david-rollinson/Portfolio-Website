@@ -1,5 +1,4 @@
 //define import methods for strapi content. 
-
 export function getStrapiUrl(path = "") {
     return `${
         process.env.VUE_PUBLIC_STRAPI_API_URL || "http://localhost:1337"
