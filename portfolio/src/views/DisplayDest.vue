@@ -47,7 +47,8 @@ export default {
             let newContent = await fetch(sourceData.projects[_id-1].template).then( response => response.text() ).then(r => marked.parse(r));
             // console.log(sourceData.projects[_id-1].template); //check article selection.
             // console.log(newContent); //check if promise fulfilled. 
-            this.dataToParse = DOMPurify.sanitize(newContent);
+            // this.dataToParse = DOMPurify.sanitize(newContent); //TO DO: find out how to sanitise content without removing iframe content?
+            this.dataToParse = newContent;
         }
         }
     }
@@ -58,11 +59,6 @@ export default {
 
 body {
     --margin-val: 35px;
-}
-
-a {
-    text-decoration: wavy overline yellow;
-    color: rgb(92, 92, 212);
 }
 
 .center_text {
