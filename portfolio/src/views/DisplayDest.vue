@@ -45,9 +45,9 @@ export default {
         async markdownToHtml(_id){
         if(sourceData.projects[_id-1].template != "") { //check if there is data to load. 
             let newContent = await fetch(sourceData.projects[_id-1].template).then( response => response.text() ).then(r => marked.parse(r));
-            console.log(sourceData.projects[_id-1].template);
-            console.log(newContent); //check if promise fulfilled. 
-            this.dataToParse = newContent;
+            // console.log(sourceData.projects[_id-1].template); //check article selection.
+            // console.log(newContent); //check if promise fulfilled. 
+            this.dataToParse = DOMPurify.sanitize(newContent);
         }
         }
     }

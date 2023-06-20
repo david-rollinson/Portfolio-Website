@@ -35,6 +35,11 @@ nav > * {
   text-shadow: 5px 5px 8px;
 }
 
+a {
+  text-decoration: wavy overline yellow;
+  color: rgb(92, 92, 212);
+}
+
 nav a {
   /*text*/
   font-size: 24px;
