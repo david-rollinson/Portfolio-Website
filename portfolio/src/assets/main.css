@@ -134,6 +134,10 @@ h3 {
   font-size: 22px;
 }
 
+iframe > * {
+  padding-left: 10px;
+}
+
 .intro_text {
   margin-left: auto;
   margin-right: auto;
