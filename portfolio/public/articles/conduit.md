@@ -1,7 +1,7 @@
 Dynamic sculpture work for ‘Third___’ online digital arts show, exhibited May 2021. Solo lockdown project, titled ‘CONDUIT’.  
 
-Materials: Black plastic truncated cylinder vessel, aquarium tubing, hydroxyethyl cellulose in Black, three 12V vacuum pumps.  
-Technologies: Arduino using custom electronics. JUCE delay plugin for Ableton Live (not shown). 
+Materials: *Black plastic truncated cylinder vessel, aquarium tubing, hydroxyethyl cellulose in Black, three 12V vacuum pumps.*
+Technologies: *Arduino using custom electronics. JUCE delay plugin for Ableton Live (not shown).*
 
 ***Scroll down for a closer look* ↓**
 

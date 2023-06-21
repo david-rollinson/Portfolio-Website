@@ -5,8 +5,8 @@ import "./assets/main.css";
 /* For Strapi CMS integration. */
 import { fetchAPI } from "../lib/api";
 import { getStrapiMedia } from "../lib/media";
+
 /* For Markdown alternative. */
-// import marked from 'marked';
 
 const app = createApp(App);
 

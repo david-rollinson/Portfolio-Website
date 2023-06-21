@@ -1,6 +1,6 @@
 <div class="mkd_img"> 
 
-|![Screen Calibration.](/public/images/articles/circular.gif)|
+|![Screen Calibration.](/images/articles/circular.gif)|
 |:--:| 
 |Early training iteration of my own StyleGAN model, using transfer learning with the WikiArt Dataset.|
 

@@ -1,57 +1,91 @@
-<!--- Tags: 2D, Artwork, Javascript, ML, Python
+<!-- Tags: 2D, Artwork, Javascript, ML, Python -->
 
-![Demo gif rendered in Processing, assembled in Photoshop CC.](Lightning%20Neural%20Inpainting%20with%20Pix2Pix%20(TensorFl%20e369a44194184905bd1cd7a14bff4106/panning1.gif)
+<div class="mkd_img"> 
 
-Demo gif rendered in Processing, assembled in Photoshop CC.
+|![Screen Calibration.](/images/articles/neural_inpaint/neural_1.gif)|
+|:--:| 
+|Demo gif rendered in Processing, assembled in Photoshop CC.|
 
-Neural photo manipulation for ‘Machine Learning for Creative Practice’ university class. 
+</div>
 
-Custom pix2pix model trained on images of lightning, scraped from Bing using ‘bulk-bing-image-scraper’. The ML model was used inside a javascript program which selected at random an image from a dataset of incomplete images, and then used the ML model to ‘inpaint’ pixels into the whitespace of each image. 
+Neural photo manipulation for a university class. Custom pix2pix model trained on images of lightning, scraped from Bing using ‘bulk-bing-image-scraper’. The ML model was used inside a javascript program which selected at random an image from a dataset of incomplete images, and then used the ML model to ‘inpaint’ pixels into the whitespace of each image. 
 
 Technologies: Pix2Pix Tensorflow, Python, Shell Scripting, Paperspace Cloud Computing, p5.js, ml5.js. 
 
-***Scroll down for a closer look* ↓**
+<div class="mkd_img"> 
 
-![After inpainting.](Lightning%20Neural%20Inpainting%20with%20Pix2Pix%20(TensorFl%20e369a44194184905bd1cd7a14bff4106/myCanvas_(83).jpg)
+|![pix2pix](/images/articles/neural_inpaint/neural_2.jpg)|![pix2pix](/images/articles/neural_inpaint/neural_3.jpg)|
+|:--:|:--:| 
+|After inpainting.|‘Incomplete’ image. Before inpainting.|
 
-After inpainting.
+</div>
 
-![‘Incomplete’ image. Before inpainting.](Lightning%20Neural%20Inpainting%20with%20Pix2Pix%20(TensorFl%20e369a44194184905bd1cd7a14bff4106/myCanvas_(82).jpg)
+<div class="center_text">
+    Image dataset can be found <a href="https://gitlab.doc.gold.ac.uk/droll002/pix2pix-dataset" target="_blank" rel="noreferrer noopener">here</a> on my GitLab repository.
+    <br>Pictured below: Resulting series of inpainted images. 
+</div>
 
-‘Incomplete’ image. Before inpainting.
+<div class="mkd_img" style="box-sizing: border-box;">
+    <div class="row">
+        <div class="column">
+        <img src="/images/articles/neural_inpaint/neural_4.jpg" style="width:100%" alt="Neural Inpaint Image.">
+        <img src="/images/articles/neural_inpaint/neural_5.jpg" style="width:100%" alt="Neural Inpaint Image.">
+        <img src="/images/articles/neural_inpaint/neural_6.jpg" style="width:100%" alt="Neural Inpaint Image.">
+        <img src="/images/articles/neural_inpaint/neural_7.jpg" style="width:100%" alt="Neural Inpaint Image.">
+        <img src="/images/articles/neural_inpaint/neural_8.jpg" style="width:100%" alt="Neural Inpaint Image.">
+        </div>
+        <div class="column">
+        <img src="/images/articles/neural_inpaint/neural_9.jpg" style="width:100%" alt="Neural Inpaint Image.">
+        <img src="/images/articles/neural_inpaint/neural_10.jpg" style="width:100%" alt="Neural Inpaint Image.">
+        <img src="/images/articles/neural_inpaint/neural_11.jpg" style="width:100%" alt="Neural Inpaint Image.">
+        <img src="/images/articles/neural_inpaint/neural_12.jpg" style="width:100%" alt="Neural Inpaint Image.">
+        <img src="/images/articles/neural_inpaint/neural_13.jpg" style="width:100%" alt="Neural Inpaint Image.">
+        </div>
+    </div>
+    <img src="/images/articles/neural_inpaint/neural_14.jpg" style="width:35%; margin-top: 8px" alt="Neural Inpaint Image.">
+</div>
 
-Resulting series of inpainted images:
+## Interactive Sketch.
 
-![myCanvas (2).jpg](Lightning%20Neural%20Inpainting%20with%20Pix2Pix%20(TensorFl%20e369a44194184905bd1cd7a14bff4106/myCanvas_(2).jpg)
+<div class="mkd_img"> 
 
-![myCanvas.jpg](Lightning%20Neural%20Inpainting%20with%20Pix2Pix%20(TensorFl%20e369a44194184905bd1cd7a14bff4106/myCanvas.jpg)
+|![Screen Calibration.](/images/articles/neural_inpaint/neural_15.gif)|
+|:--:| 
+|Demo gif, assembled in Photoshop CC.|
 
-![myCanvas (34).jpg](Lightning%20Neural%20Inpainting%20with%20Pix2Pix%20(TensorFl%20e369a44194184905bd1cd7a14bff4106/myCanvas_(34).jpg)
+</div>
 
-![myCanvas (38).jpg](Lightning%20Neural%20Inpainting%20with%20Pix2Pix%20(TensorFl%20e369a44194184905bd1cd7a14bff4106/myCanvas_(38).jpg)
+I wrote a javascript sketch which cycles through the dataset of lightning images and sporadically applies a white box for the neural network to inpaint. By clicking, the user can stop the sketch and press ENTER to apply the neural inpainting effect. The sketch can be cloned and run from <a href="https://github.com/david-rollinson/ML-Creative-Applications-Demos/tree/main/Lightning%20Sketch%20Using%20Custom%20pix2pix" target="_blank" rel="noreferrer noopener">here</a>.
 
-![myCanvas (13).jpg](Lightning%20Neural%20Inpainting%20with%20Pix2Pix%20(TensorFl%20e369a44194184905bd1cd7a14bff4106/myCanvas_(13).jpg)
+<style scoped>
 
-![myCanvas (36).jpg](Lightning%20Neural%20Inpainting%20with%20Pix2Pix%20(TensorFl%20e369a44194184905bd1cd7a14bff4106/myCanvas_(36).jpg)
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    flex-basis: 100%;
+}
 
-![myCanvas (25).jpg](Lightning%20Neural%20Inpainting%20with%20Pix2Pix%20(TensorFl%20e369a44194184905bd1cd7a14bff4106/myCanvas_(25).jpg)
+.column {
+    display: flex;
+    flex: 40%;
+    max-width: 35%;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-![myCanvas (19).jpg](Lightning%20Neural%20Inpainting%20with%20Pix2Pix%20(TensorFl%20e369a44194184905bd1cd7a14bff4106/myCanvas_(19).jpg)
+.column img {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    vertical-align: middle;
+}
 
-![myCanvas (23).jpg](Lightning%20Neural%20Inpainting%20with%20Pix2Pix%20(TensorFl%20e369a44194184905bd1cd7a14bff4106/myCanvas_(23).jpg)
+.center_text {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
-![myCanvas (21).jpg](Lightning%20Neural%20Inpainting%20with%20Pix2Pix%20(TensorFl%20e369a44194184905bd1cd7a14bff4106/myCanvas_(21).jpg)
-
-![myCanvas (32).jpg](Lightning%20Neural%20Inpainting%20with%20Pix2Pix%20(TensorFl%20e369a44194184905bd1cd7a14bff4106/myCanvas_(32).jpg)
-
-Original image dataset can be found [here](https://gitlab.doc.gold.ac.uk/droll002/pix2pix-dataset) on my GitLab repository. 
-
-![Demo gif, assembled in Photoshop CC.](Lightning%20Neural%20Inpainting%20with%20Pix2Pix%20(TensorFl%20e369a44194184905bd1cd7a14bff4106/Lightning.gif)
-
-Demo gif, assembled in Photoshop CC.
-
-I wrote a javascript sketch which cycles through the dataset of lightning images and sporadically applies a white box for the neural network to inpaint. By clicking, the user can stop the sketch and press ENTER to apply the neural inpainting effect. 
-
-[← Home](https://www.notion.so/David-Rollinson-Compiled-Info-077934589fbe40f79015748231abe307?pvs=21) --->
-
-Coming soon. 
+</style>
