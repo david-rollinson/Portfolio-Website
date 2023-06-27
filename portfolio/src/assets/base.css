@@ -16,6 +16,7 @@
   background: var(--color-background);
   background-color: var(--color-background);
   transition: color 1s, background-color 1s;
+  font-display: block;
 }
 
 body {
