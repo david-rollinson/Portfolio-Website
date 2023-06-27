@@ -21,7 +21,7 @@
 
 <script>
 import TheNavigation from '@/components/TheNavigation.vue'
-import sourceData from '@/data_copy.json'
+import sourceData from '@/data.json'
 import { marked } from 'marked';
 
 export default {
