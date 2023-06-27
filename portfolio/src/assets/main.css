@@ -173,7 +173,7 @@ body {
 /* import FONTs here to satisfy mobile view */
 @font-face {
   font-family: 'Codystar';
-  src: url('./fonts/Codystar.ttf');
+  src: url(./fonts/Codystar.ttf);
 
 }
 

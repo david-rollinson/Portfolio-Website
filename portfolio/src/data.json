@@ -7,53 +7,60 @@
             "description": "Cyclops Retina, Light Barrier 2.4",
             "image": "1.jpg",
             "template": "/articles/cyclops_retina.md"
+        },        {
+            "name": "Vitrolithic Ferrous Homunculi",
+            "slug": "ferrous",
+            "id": 2,
+            "description": "Vitrolithic Ferrous Homunculi",
+            "image": "9.jpg",
+            "template": "/articles/vitrolithic_ferrous.md"
         },         {
             "name": "Pool (Orientation 1).",
             "slug": "pool",
-            "id": 2,
+            "id": 3,
             "description": "this is an example of the system.",
             "image": "2.jpg",
             "template": "/articles/pool_orientation.md"
         },         {
             "name": "StyleGAN Hollow Face Illusion.",
             "slug": "hollowfaceillusion",
-            "id": 3,
-            "description": "this is an example of the system.",
+            "id": 4,
+            "description": "StyleGAN Hollow Face Illusion.",
             "image": "3.gif",
             "template": "/articles/stylegan_2.md"
         },         {
             "name": "COUNDUIT.",
             "slug": "conduit",
-            "id": 4,
-            "description": "this is an example of the system.",
+            "id": 5,
+            "description": "COUNDUIT.",
             "image": "4.jpg",
             "template": "/articles/conduit.md"
         },         {
             "name": "Blender CGI.",
             "slug": "blender",
-            "id": 5,
-            "description": "this is an example of the system.",
+            "id": 6,
+            "description": "Blender CGI.",
             "image": "5.jpg",
             "template": "/articles/cgi_collection.md"
         },         {
             "name": "Lightning Neural Inpainting.",
             "slug": "neuralinpaint",
-            "id": 6,
-            "description": "this is an example of the system.",
+            "id": 7,
+            "description": "Lightning Neural Inpainting.",
             "image": "6.gif",
             "template": "/articles/neural_inpainting.md"
         },         {
             "name": "Machine Learning Sketches.",
             "slug": "creativeml",
-            "id": 7,
-            "description": "this is an example of the system.",
+            "id": 8,
+            "description": "Machine Learning Sketches.",
             "image": "7.jpg",
             "template": "/articles/machine_learning.md"
         },         {
             "name": "Exquisite Horse.",
             "slug": "exquisitehorse",
-            "id": 8,
-            "description": "this is an example of the system.",
+            "id": 9,
+            "description": "Exquisite Horse.",
             "image": "8.gif",
             "template": "/articles/exquisite_horse.md"
         }
