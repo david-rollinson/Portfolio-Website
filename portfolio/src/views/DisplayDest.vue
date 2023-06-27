@@ -58,7 +58,7 @@ export default {
 <style>
 
 body {
-    --margin-val: 35px;
+    --margin-val: 16px;
 }
 
 .center_text {
@@ -88,6 +88,8 @@ body {
 
 .mkd_img img {
     display: block;
+    margin-top: var(--margin-val);
+    margin-bottom: var(--margin-val);
     width: 70%;
     margin-left: auto;
     margin-right: auto;
@@ -130,6 +132,36 @@ body {
     min-height: 200px;
     height: 500px;
     max-height: 500px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    flex-basis: 100%;
+}
+
+.column {
+    display: flex;
+    flex: 40%;
+    max-width: 35%;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.column img {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    vertical-align: middle;
+}
+
+.center_text {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /*set media rule*/

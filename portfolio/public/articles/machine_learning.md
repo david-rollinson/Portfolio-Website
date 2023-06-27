@@ -2,13 +2,11 @@ A collection of Machine Learning browser application demos. Code for each can be
 
 <!-- Tags: API, Google Teachable Machine, HTML, Javascript, ML -->
 <div class="mkd_img"> 
-
-|![pix2pix](/images/articles/ml_1.jpg)|![pix2pix](/images/articles/ml_2.png)|
-|:--:|:--:| 
-|||
-
-Captured images from Pix2Pix demo sketch programmed in p5.js and ml5.js. See demo 1 below.
-
+    <div class="row">
+        <img src="/images/articles/ml_1.jpg" style="width:45%" alt="Neural Inpaint Image.">
+        <img src="/images/articles/ml_2.png" style="width:45%" alt="Neural Inpaint Image.">
+    </div>
+    Captured images from Pix2Pix demo sketch programmed in p5.js and ml5.js. See demo 1 below.
 </div>
 
 ## **>PoseNet, Image Filtering and Pix2Pix (Demo 1):**
