@@ -26,6 +26,10 @@ strong {
   font-weight: 400;
 }
 
+b {
+  font-weight: 400;
+}
+
 /*apply to all nav children*/
 nav > * {
   /*text*/
