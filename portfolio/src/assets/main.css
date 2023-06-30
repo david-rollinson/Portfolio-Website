@@ -172,6 +172,7 @@ body {
 
 /* import FONTs here to satisfy mobile view */
 @font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Codystar';
   src: url(./fonts/Codystar.ttf);
 

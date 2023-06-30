@@ -13,6 +13,6 @@
         <iframe title="vimeo-player" src="https://player.vimeo.com/video/787403650?h=9f16a52afa" class="v_video" frameborder="0" allowfullscreen></iframe> 
         <iframe title="vimeo-player" src="https://player.vimeo.com/video/787403556?h=99cc53b1c7" class="v_video" frameborder="0" allowfullscreen></iframe>
         <iframe title="vimeo-player" src="https://player.vimeo.com/video/787403229?h=f453b0ce08" class="v_video" frameborder="0" allowfullscreen></iframe>
-        <p>Noise and Nonlinear Circular Interpolation Methods</p>
     </div> 
+    <p>Noise and Nonlinear Circular Interpolation Methods</p>
 </div>

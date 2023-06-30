@@ -16,7 +16,8 @@
   </h3>
   </div>
   <div class="footer">
-  <p>This website is an ongoing project, created in Vue.js.</p>
+  <p>This website is an ongoing project, created in Vue.js. 
+  <a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fdevushkabeam.netlify.app%2F" target="_blank" rel="noreferrer noopener">Web stats.</a></p>
   </div>
   </body>
 </template>
