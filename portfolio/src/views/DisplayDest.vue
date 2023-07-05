@@ -1,4 +1,6 @@
 <template>
+
+<div>
     <section class="project">
     <div class = "details">
             <!-- <h3>{{ project.description }}</h3> -->
@@ -11,6 +13,9 @@
         <RouterLink to="/work">←back</RouterLink>
     </div>
 </section>
+
+</div>
+
 </template>
 
 <script>
@@ -129,9 +134,9 @@ body {
 
 .h_video {
     width: 100%;
-    min-height: 200px;
-    height: 500px;
-    max-height: 500px;
+    min-height: 400px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .row {

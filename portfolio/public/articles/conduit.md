@@ -47,7 +47,7 @@ Three glasses containing differing quantities of water and sand are placed on to
 Closeup of vacuum pumping system and the custom electronics. The Arduino board receives the weight values of the three glasses and modulates the power to each corresponding vacuum pump motor (this process is made easier by using two motor driver shields, seen as the thick black strip in the center of the breadboard).
 
 An air intake valve is located at the top of each white cylindrical pump motor. From here the motor pushes this air through the release valve on the end of each motor, funnelling air through the aquarium tubing and into the base of the vessel.  
-The less force, the lower the air output. The liquid shivers and bubbles as air rises to the surface.  
+The less force, the lower the air output. The liquid shivers and froths as air rises to the surface.  
 
 <div class="mkd_img"> 
 

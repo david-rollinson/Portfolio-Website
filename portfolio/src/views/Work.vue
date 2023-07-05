@@ -54,6 +54,7 @@
 </script>
 
 <template>
+  <div>
   <header>
   </header>
 
@@ -85,6 +86,7 @@
   </div>
 </div>
   </body>
+</div>
 </template>
 
 <style scoped>

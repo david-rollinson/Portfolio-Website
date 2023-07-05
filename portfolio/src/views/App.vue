@@ -8,11 +8,14 @@
     <!-- Always renders the contents of the active page. -->
     <!---alter the key to rerender the component inside routerview--->
     <!-- only if view is '/work', pass in the image loaded and imageUrl -->
-    <!-- <RouterView :key="$route.path" v-bind="$route.path=='/work' ? {isImageLoaded, imageUrl} : {}"></RouterView> -->
-    <RouterView :key="$route.path" v-bind="$route.path=='/work' ? {newImages} : {}"></RouterView>
-    <!-- <RouterView :key="$route.path"></RouterView> -->
+    <!-- <RouterView :key="$route.path" v-bind="$route.path=='/work' ? {newImages} : {}"></RouterView> -->
+    <RouterView v-slot="{Component}" >
     <!--Random idea - implement konami code as fun easteregg?-->
-
+    <Transition name="fade" mode="out-in">
+      <!--pass in image array to the component-->
+      <component :is="Component" :key="$route.path" v-bind="$route.path=='/work' ? {newImages} : {}"/>
+    </Transition>
+    </RouterView>
     <div class="marquee">
       <!-- <p>@devushkabeam</p> -->
     </div>
@@ -75,6 +78,19 @@ const currentView = computed(() => {
 </script>
 
 <style>
+
+.fade-enter-active {
+    transition: all 0.3s;
+}
+.fade-leave-active {
+    transition: all 0.4s;
+}
+
+.fade-enter-from,
+.fade-leave-to{
+    opacity: 0;
+    transform: scaleX(0.995);
+}
 
 .marquee {
   background: blue;

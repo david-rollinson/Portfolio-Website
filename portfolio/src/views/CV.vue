@@ -1,4 +1,5 @@
 <template>
+<div>
   <header>
 
   </header>
@@ -6,6 +7,7 @@
   <body>
       <iframe id="cv_pdf" src="files/David_Rollinson_CV_CS.pdf" frameborder="0"></iframe>
   </body>
+</div>
 </template>
 
 <style scoped>

@@ -1,9 +1,11 @@
 <template>
+  <div>
   <header>
 
   </header>
 
   <body>
+    
     <div class="about_text" style="height: 50vh;">
     <h3>
     <span style="letter-spacing: 1vw; text-align: center;">All enquiries:  davrc . me @ gmail . com</span>
@@ -20,6 +22,7 @@
   <a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fdevushkabeam.netlify.app%2F" target="_blank" rel="noreferrer noopener">Web stats.</a></p>
   </div>
   </body>
+</div>
 </template>
 
 <style scoped>
