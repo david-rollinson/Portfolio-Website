@@ -41,7 +41,6 @@ nav > * {
   text-align: left;
   text-decoration: none;
   height: fit-content;
-  text-shadow: 5px 5px 8px;
 }
 
 a {
@@ -56,6 +55,7 @@ nav a {
   font-weight:800;
   text-align: left;
   text-decoration: none;
+  text-shadow: 5px 5px 8px;
 
   /*border*/
   border: none;
@@ -133,7 +133,6 @@ h2 {
   color: blue;
   font-weight: 800;
   font-family: Codystar;
-  /* text-shadow: 5px 5px 8px; */
 }
 
 h3 {
@@ -306,7 +305,6 @@ router-link > * {
     /*text*/
     font-size: 24px;
     letter-spacing: 2ch;
-    text-shadow: none;
     animation-name: none;
   }
 
@@ -318,6 +316,11 @@ router-link > * {
   nav a {
     filter: blur(0px);
     text-indent: 0ch;
+    text-shadow: none;
+  }
+
+  nav a:hover {
+    text-shadow: none;
   }
 
   nav a:active {
