@@ -14,6 +14,7 @@ html {
   /*  Alter column widths. */
   min-height: 100%;
   max-width: 100vw;
+  font-family: system-ui;
   /* Site padding */
   /* padding: 2rem; */
   /* Fonts */
@@ -271,6 +272,11 @@ router-link > * {
     overflow: hidden;
   }
 
+  a {
+    text-decoration: wavy overline yellow;
+    color: rgb(92, 92, 212);
+  }
+
   header {
     display: flex;
     justify-content: flex-start;
@@ -294,6 +300,14 @@ router-link > * {
   header.wrapper {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  nav > * {
+    /*text*/
+    font-size: 24px;
+    letter-spacing: 2ch;
+    text-shadow: none;
+    animation-name: none;
   }
 
   nav {
@@ -323,11 +337,12 @@ router-link > * {
     max-width: fit-content;
     filter: blur(0px);
     filter: drop-shadow(0.2rem 0.2rem 1rem yellow);
+    transition: filter 2s;
 }
 
   nav a.router-link-exact-active:hover {
   background: yellow;
-  filter: drop-shadow(0 0 0 transparent);
+  filter: none;
 }
 
 }
