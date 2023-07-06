@@ -317,6 +317,20 @@ router-link > * {
     filter: blur(0px);
     text-indent: 0ch;
     text-shadow: none;
+
+    /*animation setup*/
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-name: floater_mob;
+    animation-duration: 7s;
+  }
+
+    /*set animation params*/
+  @keyframes floater_mob {
+    from { transform: translate(0,  0px); }
+    35%  { transform: translate(3px, 7px); } 
+    65%  { transform: translate(-5px, 15px); }  
+    to   { transform: translate(0, 0px); }  
   }
 
   nav a:hover {
