@@ -33,7 +33,7 @@
       }
     },
     mounted() {
-      // console.log(this.newImages);
+      console.log(sourceData.projects[1].media_extension);
     },
     props: {
       // imageUrl: {
@@ -76,8 +76,8 @@
         <div class="image_border">
         <div class="image_container">
         <!--access the newImages array, use project id -1 to account for 0 based array counting-->
-        <img :src="newImages[project.id - 1]" class="content_img" rel="preload"/> 
-        <!-- select from an array of props? -->
+        <img v-if="project.media_extension === '.webp'" :src="newImages[project.id - 1]" class="content_img" rel="preload"/> 
+        <video v-else width="320" height="240" autoplay loop><source :src="newImages[project.id - 1]" type="video/mp4"></video>
         </div>
         </div>
         <!-- template including image file, and brief description preview? -->

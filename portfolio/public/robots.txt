@@ -5,6 +5,8 @@ User-agent: googlebot
 User-agent: Googlebot-Video
 User-agent: Applebot
 User-agent: bingbot
+User-agent: DuckDuckBot
+User-agent: archive.org_bot
 
 Allow: /
 Allow: /work

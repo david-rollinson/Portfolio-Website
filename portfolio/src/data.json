@@ -6,6 +6,7 @@
             "id": 1,
             "description": "Cyclops Retina, Light Barrier 2.4",
             "image": "1.webp",
+            "media_extension": ".webp",
             "template": "/articles/cyclops_retina.md"
         },        {
             "name": "Vitrolithic Ferrous Homunculi",
@@ -13,6 +14,7 @@
             "id": 2,
             "description": "Vitrolithic Ferrous Homunculi",
             "image": "9.webp",
+            "media_extension": ".webp",
             "template": "/articles/vitrolithic_ferrous.md"
         },         {
             "name": "Pool (Orientation 1).",
@@ -20,6 +22,7 @@
             "id": 3,
             "description": "this is an example of the system.",
             "image": "2.webp",
+            "media_extension": ".webp",
             "template": "/articles/pool_orientation.md"
         },         {
             "name": "StyleGAN Hollow Face Illusion.",
@@ -27,6 +30,7 @@
             "id": 4,
             "description": "StyleGAN Hollow Face Illusion.",
             "image": "3.webp",
+            "media_extension": ".webp",
             "template": "/articles/stylegan_2.md"
         },         {
             "name": "COUNDUIT.",
@@ -34,6 +38,7 @@
             "id": 5,
             "description": "COUNDUIT.",
             "image": "4.webp",
+            "media_extension": ".webp",
             "template": "/articles/conduit.md"
         },         {
             "name": "Blender CGI.",
@@ -41,6 +46,7 @@
             "id": 6,
             "description": "Blender CGI.",
             "image": "5.webp",
+            "media_extension": ".webp",
             "template": "/articles/cgi_collection.md"
         },         {
             "name": "Lightning Neural Inpainting.",
@@ -48,6 +54,7 @@
             "id": 7,
             "description": "Lightning Neural Inpainting.",
             "image": "6.webp",
+            "media_extension": ".webp",
             "template": "/articles/neural_inpainting.md"
         },         {
             "name": "Machine Learning Sketches.",
@@ -55,13 +62,15 @@
             "id": 8,
             "description": "Machine Learning Sketches.",
             "image": "7.webp",
+            "media_extension": ".webp",
             "template": "/articles/machine_learning.md"
         },         {
             "name": "Exquisite Horse.",
             "slug": "exquisitehorse",
             "id": 9,
             "description": "Exquisite Horse.",
-            "image": "8.gif",
+            "image": "8.mp4",
+            "media_extension": ".mp4",
             "template": "/articles/exquisite_horse.md"
         }
     ]
