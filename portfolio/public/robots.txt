@@ -1,0 +1,27 @@
+User-agent: *
+Disallow: /
+
+User-agent: googlebot
+User-agent: Googlebot-Video
+User-agent: Applebot
+User-agent: bingbot
+
+Allow: /
+Allow: /work
+Allow: /work/*
+Allow: /about
+Allow: /assets
+Allow: /articles
+Allow: /images/*
+Disallow: /cv
+Disallow: /files
+
+User-agent: AdsBot-Google
+User-agent: Twitterbot
+User-agent: Adidxbot
+Allow: /
+
+User-agent: Yahoo Pipes 1.0
+User-agent: Facebot
+User-agent: externalfacebookhit
+Disallow: /

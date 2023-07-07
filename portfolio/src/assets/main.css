@@ -247,14 +247,14 @@ button {
 }
 
 /*Below is for when transferring styles between active classes, i.e. when the router link matches the current page.*/ 
-nav a.router-link-exact-active {
+nav a.router-link-exact-active-class {
   padding-left: 20px;
   filter:blur(0px);
   transition: 1s;
 }
 
 
-nav a.router-link-exact-active:hover {
+nav a.router-link-exact-active-class:hover {
   background: white;
   filter: drop-shadow(0.2rem 0.2rem 1rem aliceblue);
 }
