@@ -1,5 +1,5 @@
 import { createApp, VueElement } from "vue";
-import App from "./views/App.vue"
+import App from "./views/App.vue";
 import router from "./router";
 import "./assets/main.css";
 /* For Strapi CMS integration. */
@@ -16,4 +16,4 @@ app.mount("#app");
 
 export default {
   /*prop declarations here*/
-  }
+};

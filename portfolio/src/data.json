@@ -69,8 +69,8 @@
             "slug": "exquisitehorse",
             "id": 9,
             "description": "Exquisite Horse.",
-            "image": "8.mp4",
-            "media_extension": ".mp4",
+            "image": "8.gif",
+            "media_extension": ".gif",
             "template": "/articles/exquisite_horse.md"
         }
     ]

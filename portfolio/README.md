@@ -1,8 +1,8 @@
-# portfolio
+# Creative Technologist Portfolio
 
-This template should help get you started developing with Vue 3 in Vite.
+You have reached David Rollinson's custom portfolio, created as a SPA using Vue3.
 
-## Recommended IDE Setup
+## IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
