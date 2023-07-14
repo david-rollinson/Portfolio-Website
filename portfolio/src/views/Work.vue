@@ -30,10 +30,15 @@
         this.yPos = 0;
         this.offsetX = 50;
         this.offsetY = 50;
+      },
+      captchaScript() {
+        let recaptchaScript = document.createElement('script')
+        recaptchaScript.setAttribute('src', 'https://www.google.com/recaptcha/api.js')
+        document.head.appendChild(recaptchaScript)
       }
     },
     mounted() {
-      console.log(sourceData.projects[1].media_extension);
+      this.captchaScript();
     },
     props: {
       // imageUrl: {
@@ -77,7 +82,7 @@
         <div class="image_container">
         <!--access the newImages array, use project id -1 to account for 0 based array counting-->
         <img v-if="project.media_extension === '.webp'" :src="newImages[project.id - 1]" class="content_img" rel="preload"/> 
-        <video v-else width="320" height="240" autoplay loop><source :src="newImages[project.id - 1]" type="video/mp4"></video>
+        <video v-else width="550" autoplay loop><source :src="newImages[project.id - 1]" type="video/mp4"></video>
         </div>
         </div>
         <!-- template including image file, and brief description preview? -->
