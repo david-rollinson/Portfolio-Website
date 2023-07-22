@@ -198,7 +198,7 @@ body {
   .projects {
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 60px;
+    row-gap: 80px;
     justify-items: center;
     margin-bottom: 200px;
     align-items: end;

@@ -5,7 +5,7 @@
     <body>
       <div class="intro_text">
         <h3>
-          <p style="font-weight: 400; font-size: 14px; margin-bottom: 5px">
+          <p class="note">
             † Note: this website's
             <a
               href="https://github.com/david-rollinson/Portfolio-Website/tree/maintenance/portfolio"
@@ -48,6 +48,12 @@
 </template>
 
 <style scoped>
+.note {
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
 /*set  media rule*/
 @media (max-width: 900px) {
   /* sets the min width of these particular style attributes */
