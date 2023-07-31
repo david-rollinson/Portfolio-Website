@@ -106,9 +106,11 @@ export default {
   },
   mounted () {
     window.addEventListener('wheel', this.handleScroll);
+    window.addEventListener('touchmove', this.handleScroll);
   },
   unmounted () {
     window.removeEventListener('wheel', this.handleScroll);
+    window.removeEventListener('touchmove', this.handleScroll);
     this.deltaCount = 0;
   },
   methods: {
