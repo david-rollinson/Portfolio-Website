@@ -120,6 +120,8 @@ export default {
       console.log(document.body.offsetHeight);
       if(window.innerHeight + this.deltaCount > document.body.offsetHeight) {
         this.$router.push({ name: 'Work' })
+      } else if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+        this.$router.push({ name: 'Work' })
       }
     }
   }
