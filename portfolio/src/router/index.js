@@ -1,13 +1,13 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "@/views/Home.vue";
 import Work from "@/views/Work.vue";
-import About from "@/views/About.vue";
+import Info from "@/views/Info.vue";
 import CV from "@/views/CV.vue";
 
 const routes = [
   { path: "/", name: "Home", component: Home },
   { path: "/work", name: "Work", component: Work },
-  { path: "/about", name: "About", component: About },
+  { path: "/info", name: "Info", component: Info },
   { path: "/cv", name: "CV", component: CV },
   //pass the project id over to the component.
   {

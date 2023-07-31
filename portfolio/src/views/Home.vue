@@ -43,6 +43,10 @@
           </p>
         </h3>
       </div>
+      <div class="user-directive">
+      <p>⇪
+      </p>
+      </div>
     </body>
   </div>
 </template>
@@ -54,10 +58,69 @@
   margin-bottom: 5px;
 }
 
+.user-directive {
+  position: relative;
+  bottom: 0px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  /* background-color: aqua; */
+  text-shadow: 2rem 2rem 20rem black;
+  font-family: Codystar;
+  font-size: 20px;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-name: arrow;
+  animation-duration: 3.5s;
+  line-height: 12px;
+}
+
+.user-directive p {
+  color: rgba(0, 0, 255, 0.5);
+  transform: rotate(180deg);
+}
+
+/*set animation params*/
+@keyframes arrow {
+  from { transform: translate(0px, 0px); }
+  50%  { transform: translate(0px, 20px); } 
+  to   { transform: translate(0px, 0px); }  
+}
+
 /*set  media rule*/
 @media (max-width: 900px) {
   /* sets the min width of these particular style attributes */
+  .user-directive {
+  bottom: 100px;
+  }
 }
 </style>
 
-<script setup></script>
+<script>
+export default {
+  data() {
+    return {
+      deltaCount: 0,
+    }
+  },
+  mounted () {
+    window.addEventListener('wheel', this.handleScroll);
+  },
+  unmounted () {
+    window.removeEventListener('wheel', this.handleScroll);
+    this.deltaCount = 0;
+  },
+  methods: {
+    handleScroll (event) {
+      //If deltaY (part of the WheelEvent object) is less than doc height i.e. a scroll down past the bottom edge of the page, push to next router page.
+      this.deltaCount += event.deltaY;
+      console.log(document.body.offsetHeight);
+      if(window.innerHeight + this.deltaCount > document.body.offsetHeight) {
+        this.$router.push({ name: 'Work' })
+      }
+    }
+  }
+}
+
+</script>

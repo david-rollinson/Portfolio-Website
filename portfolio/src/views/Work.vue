@@ -11,7 +11,15 @@ export default {
       yPos: 0,
       offsetX: 50,
       offsetY: 50,
+      deltaCount: 0,
     };
+  },
+  mounted() {
+    // window.addEventListener('wheel', this.handleScroll);
+  },
+  unmounted() {
+    // window.removeEventListener('wheel', this.handleScroll);
+    // this.deltaCount = 0;
   },
   methods: {
     mouseEnter(event) {
@@ -31,27 +39,15 @@ export default {
       this.offsetX = 50;
       this.offsetY = 50;
     },
-    captchaScript() {
-      let recaptchaScript = document.createElement("script");
-      recaptchaScript.setAttribute(
-        "src",
-        "https://www.google.com/recaptcha/api.js"
-      );
-      document.head.appendChild(recaptchaScript);
+    handleScroll (event) {
+      //If deltaY (part of the WheelEvent object) is more than 0 i.e. a scroll up, push to next router page.
+      this.deltaCount += event.deltaY;
+      if(this.deltaCount < -100) {
+        this.$router.push({ name: 'Home' })
+      }
     },
   },
-  mounted() {
-    this.captchaScript();
-  },
   props: {
-    // imageUrl: {
-    //   type: String,
-    //   required: true
-    // },
-    // isImageLoaded: {
-    //   type: Boolean,
-    //   required: true
-    // }
     newImages: {
       type: Array,
       required: true,

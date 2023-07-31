@@ -37,6 +37,13 @@ b {
   font-weight: 400;
 }
 
+.navigation-panel {
+  position: relative;
+  margin-left: 2vw;
+  margin-right: auto;
+  height: fit-content;
+}
+
 /*apply to all nav children*/
 nav > * {
   /*text*/
@@ -57,7 +64,8 @@ a {
 nav a {
   /*text*/
   font-size: 24px;
-  letter-spacing: 2ch;
+  letter-spacing: 5vw;
+  line-height: 3.2ch;
   font-weight:800;
   text-align: left;
   text-decoration: none;
@@ -70,7 +78,7 @@ nav a {
 
   /*positioning*/
   position: relative;
-  text-indent: 1.5ch;
+  /* text-indent: 1.5ch; */
   padding-left: 0%;
   margin-left: 0;
   width: fit-content;
@@ -83,14 +91,14 @@ nav a {
   cursor: cell;
   pointer-events: all;
   color: blue;
-  background: transparent;
+  /* background: transparent; */
   
   /* sets position in front / behind  */
   z-index: 1;
   /* setup transition*/
   transition: 0.8s;
   /*set filter*/
-  filter: blur(3px);
+  filter: blur(1.8px);
   /* filter: drop-shadow(0 0 0); */
 
   /*animation setup*/
@@ -108,10 +116,24 @@ nav a:hover {
   filter: blur(0px);
   filter: drop-shadow(0.2rem 0.2rem 1rem yellow);
   text-shadow: 0px 0px 9px;
+  transition: 1s;
 }
 
 a:hover {
   cursor: cell;
+}
+
+/*Below is for when transferring styles between active classes, i.e. when the router link matches the current page.*/ 
+nav a.router-link-exact-active {
+  background: white;
+  border-radius: 50%;
+  padding-left: 20px;
+  filter:blur(0px);
+  transition: 1s;
+}
+
+nav a.router-link-exact-active:hover {
+  
 }
 
 /*set animation params*/
@@ -252,19 +274,6 @@ button {
   cursor: cell;
 }
 
-/*Below is for when transferring styles between active classes, i.e. when the router link matches the current page.*/ 
-nav a.router-link-exact-active {
-  padding-left: 20px;
-  filter:blur(0px);
-  transition: 1s;
-}
-
-
-nav a.router-link-exact-active:hover {
-  background: white;
-  filter: drop-shadow(0.2rem 0.2rem 1rem aliceblue);
-}
-
 router-link > * {
   cursor: cell;
 }
@@ -356,7 +365,7 @@ router-link > * {
   }
 
   nav a:active {
-    filter: blur(3px);
+    filter: blur(1.8px);
   }
 
   .intro_text {
