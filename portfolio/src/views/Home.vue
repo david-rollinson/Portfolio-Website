@@ -117,7 +117,7 @@ export default {
     handleScroll (event) {
       //If deltaY (part of the WheelEvent object) is less than doc height i.e. a scroll down past the bottom edge of the page, push to next router page.
       this.deltaCount += event.deltaY;
-      console.log(document.body.offsetHeight);
+      // console.log(document.body.offsetHeight);
       if(window.innerHeight + this.deltaCount > document.body.offsetHeight) {
         window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
         this.$router.push({ name: 'Work' })

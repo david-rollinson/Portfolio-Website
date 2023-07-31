@@ -9,7 +9,8 @@
         <div v-html="dataToParse" class="markdown_wrapper"></div>
       </div>
       <div class="back-home">
-        <RouterLink to="/work">←back</RouterLink>
+        <a @click="nextId" v-if="withinProjectArray">Next →</a>
+        <RouterLink to="/work" v-if="!withinProjectArray">←Work</RouterLink>
       </div>
     </section>
   </div>
@@ -28,6 +29,7 @@ export default {
   data() {
     return {
       dataToParse: "Loading...", //initialise as empty, load in later.
+      withinProjectArray: true,
     };
   },
   mounted() {
@@ -36,11 +38,13 @@ export default {
     // console.log(response);
     // });
     this.markdownToHtml(this.id); //load in markdown and save to data variable.
+    this.checkId();
   },
   computed: {
     //iterate over ids to find one that matches the current id.
     project() {
-      return sourceData.projects.find((project) => project.id === this.id);
+      var tmpId = sourceData.projects.find((project) => project.id === this.id);
+      return tmpId;
     },
   },
   methods: {
@@ -56,6 +60,22 @@ export default {
         this.dataToParse = newContent;
       }
     },
+    nextId() {
+      var nextId = sourceData.projects.find((project) => project.id === this.id+1); //get the next id in the series
+      if(nextId) {
+        this.$router.push({ path:`/work/${nextId.id}/${nextId.slug}`});
+      } else {
+        this.$router.push({ path:`/info`});
+      }
+    },
+    checkId() {
+      var chckId = sourceData.projects.find((project) => project.id === this.id);
+      if(chckId.id < sourceData.projects.length) {
+        this.withinProjectArray = true;
+      } else {
+        this.withinProjectArray = false;
+      }
+    }
   },
 };
 </script>
