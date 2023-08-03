@@ -21,7 +21,7 @@
               >here.</a
             >
           </p>
-          <span style="font-weight: 400">David Rollinson</span> is a creative
+          <span style="font-weight: 400">David Rollinson</span> is a London-based creative
           technologist who vitalises spaces and materials with interactive
           technologies. At the centre of their work in experiential environment
           design and development are computational systems used to investigate
@@ -44,8 +44,7 @@
         </h3>
       </div>
       <div class="user-directive">
-      <p>⇪
-      </p>
+      <p><a @click="pushToWork">⤑</a></p>
       </div>
     </body>
   </div>
@@ -59,26 +58,43 @@
 }
 
 .user-directive {
+  --fontSize: 24px;
   position: relative;
   bottom: 0px;
-  width: fit-content;
+  width: var(--fontSize);
+  height: var(--fontSize);
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   /* background-color: aqua; */
   text-shadow: 2rem 2rem 20rem black;
   font-family: Codystar;
-  font-size: 20px;
+  font-size: var(--fontSize);
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   animation-name: arrow;
   animation-duration: 3.5s;
   line-height: 12px;
+
+  transition: 0.5s;
 }
 
 .user-directive p {
-  color: rgba(0, 0, 255, 0.5);
-  transform: rotate(180deg);
+  color: rgba(0, 0, 255, 0.6);
+  transform: rotate(90deg);
+  text-shadow: 0px 0px 9px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+
+.user-directive a {
+  text-decoration: none;
+}
+
+.user-directive:hover{
+  background-color: yellow;
+  filter: drop-shadow(0.2rem 0.2rem 1rem yellow);
+  border-radius: 50%;
 }
 
 /*set animation params*/
@@ -120,12 +136,15 @@ export default {
       // console.log(document.body.offsetHeight);
       if(window.innerHeight + this.deltaCount > document.body.offsetHeight) {
         window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-        this.$router.push({ name: 'Work' })
+        this.pushToWork();
         
       } else if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
         window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-        this.$router.push({ name: 'Work' })
+        this.pushToWork();
       }
+    },
+    pushToWork() {
+      this.$router.push({ name: 'Work' })
     }
   }
 }
