@@ -52,7 +52,7 @@ export default {
           // console.log(this.newImages);
         };
       }
-    },
+    }
   },
   mounted() {
     // const img = new Image()

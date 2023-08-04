@@ -87,14 +87,10 @@ export default {
                 <!--access the newImages array, use project id -1 to account for 0 based array counting-->
                 <!-- replace below with file extensions that match data.json-->
                 <img
-                  v-if="project.media_extension === '.webp' || '.gif'"
                   :src="newImages[project.id - 1]"
                   class="content_img"
                   rel="preload"
                 />
-                <video v-else width="550" autoplay loop>
-                  <source :src="newImages[project.id - 1]" type="video/mp4" />
-                </video>
               </div>
             </div>
             <!-- template including image file, and brief description preview? -->

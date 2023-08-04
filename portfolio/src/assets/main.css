@@ -58,7 +58,9 @@ nav > * {
 
 a {
   text-decoration: wavy overline yellow;
+  /* text-underline-offset: -1rem; */
   color: rgb(92, 92, 212);
+  position: relative;
 }
 
 nav a {
