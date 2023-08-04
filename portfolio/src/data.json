@@ -16,7 +16,8 @@
             "image": "9.webp",
             "media_extension": ".webp",
             "template": "/articles/vitrolithic_ferrous.md"
-        },         {
+        },        
+        {
             "name": "Pool (Orientation 1).",
             "slug": "pool",
             "id": 3,
@@ -25,9 +26,17 @@
             "media_extension": ".webp",
             "template": "/articles/pool_orientation.md"
         },         {
+            "name": "Delta Functions Residency",
+            "slug": "deltafunctions",
+            "id": 4,
+            "description": "Delta Functions Residency",
+            "image": "delta_func.gif",
+            "media_extension": ".gif",
+            "template": "/articles/delta_functions.md"
+        },{
             "name": "StyleGAN Hollow Face Illusion.",
             "slug": "hollowfaceillusion",
-            "id": 4,
+            "id": 5,
             "description": "StyleGAN Hollow Face Illusion.",
             "image": "3.webp",
             "media_extension": ".webp",
@@ -35,7 +44,7 @@
         },         {
             "name": "COUNDUIT.",
             "slug": "conduit",
-            "id": 5,
+            "id": 6,
             "description": "COUNDUIT.",
             "image": "4.webp",
             "media_extension": ".webp",
@@ -43,7 +52,7 @@
         },         {
             "name": "Blender CGI.",
             "slug": "blender",
-            "id": 6,
+            "id": 7,
             "description": "Blender CGI.",
             "image": "5.webp",
             "media_extension": ".webp",
@@ -51,7 +60,7 @@
         },         {
             "name": "Lightning Neural Inpainting.",
             "slug": "neuralinpaint",
-            "id": 7,
+            "id": 8,
             "description": "Lightning Neural Inpainting.",
             "image": "6.webp",
             "media_extension": ".webp",
@@ -59,7 +68,7 @@
         },         {
             "name": "Machine Learning Sketches.",
             "slug": "creativeml",
-            "id": 8,
+            "id": 9,
             "description": "Machine Learning Sketches.",
             "image": "7.webp",
             "media_extension": ".webp",
@@ -67,7 +76,7 @@
         },         {
             "name": "Exquisite Horse.",
             "slug": "exquisitehorse",
-            "id": 9,
+            "id": 10,
             "description": "Exquisite Horse.",
             "image": "8.gif",
             "media_extension": ".gif",
