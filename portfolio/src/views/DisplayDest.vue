@@ -119,6 +119,18 @@ body {
   margin-right: auto;
 }
 
+/* img {
+  border: 10px solid white;
+  border-radius: 10px;
+  filter: drop-shadow(0px 2px 5px grey);
+}
+
+iframe video {
+  border: 10px solid white;
+  border-radius: 10px;
+  filter: drop-shadow(0px 2px 5px grey);
+} */
+
 .mkd_img:nth-of-type(1) {
   flex-grow: 1;
 }

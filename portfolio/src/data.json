@@ -30,8 +30,8 @@
             "slug": "deltafunctions",
             "id": 4,
             "description": "Delta Functions Residency",
-            "image": "delta_func.gif",
-            "media_extension": ".gif",
+            "image": "delta_func.webp",
+            "media_extension": ".webp",
             "template": "/articles/delta_functions.md"
         },{
             "name": "StyleGAN Hollow Face Illusion.",
