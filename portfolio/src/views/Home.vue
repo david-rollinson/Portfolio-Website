@@ -13,7 +13,7 @@
               rel="noreferrer noopener"
               >construction</a
             >
-            is ongoing and content is still being updated. Older projects are
+            is ongoing. Scroll down or use the navigation panel to see recent projects. Older projects are
             <a
               href="https://droll002.notion.site/droll002/David-Rollinson-Compiled-Info-077934589fbe40f79015748231abe307"
               target="_blank"

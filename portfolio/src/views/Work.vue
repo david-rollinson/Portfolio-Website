@@ -155,6 +155,7 @@ body {
   width: var(--image-width);
   transform: scale(1);
   transition: 1s;
+  height: var(--image-height);
 }
 
 .content_img:hover {

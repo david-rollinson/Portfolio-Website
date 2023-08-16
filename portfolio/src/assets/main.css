@@ -50,7 +50,7 @@ nav > * {
   font-size: 24px;
   letter-spacing: 2ch;
   font-family: Codystar;
-  font-weight: 800;
+  font-weight: 400;
   text-align: left;
   text-decoration: none;
   height: fit-content;
@@ -108,6 +108,8 @@ nav a {
   animation-timing-function: ease-in-out;
   animation-name: floater;
   animation-duration: 7s;
+  /* animation-direction: alternate-reverse; */
+  animation-timing-function: ease-in-out;
 }
 
 nav a:hover {
@@ -140,13 +142,11 @@ nav a.router-link-exact-active:hover {
 
 /*set animation params*/
 @keyframes floater {
-  from { transform: translate(0,  0px); 
+  from { transform: translate(0,  -2px); 
          letter-spacing: 2ch; }
-  35%  { transform: translate(3px, 7px); 
-         letter-spacing: 2.2ch; } 
-  65%  { transform: translate(-5px, 15px); 
+  50%  { transform: translate(-5px, 15px); 
          letter-spacing: 2.4ch; }  
-  to   { transform: translate(0, 0px); 
+  to   { transform: translate(0, -2px); 
          letter-spacing: 2ch; }  
 }
 
@@ -161,7 +161,7 @@ header {
 
 h2 {
   color: blue;
-  font-weight: 800;
+  font-weight: 400;
   font-family: Codystar;
 }
 
