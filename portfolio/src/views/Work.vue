@@ -206,6 +206,7 @@ body {
   }
   .content_img {
     width: var(--m-image-width);
+    height: var(--m-image-height);
   }
 
   .image_border {
