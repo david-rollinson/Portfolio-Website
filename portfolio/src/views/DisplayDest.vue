@@ -171,6 +171,10 @@ iframe video {
   margin-right: auto;
 }
 
+.video_container .video_flexbox iframe{
+  padding: 20px;
+}
+
 .v_video {
   width: fit-content;
   height: 300px;
