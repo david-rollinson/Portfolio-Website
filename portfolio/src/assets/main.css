@@ -179,6 +179,11 @@ h3 {
   max-width: 60vw;
 }
 
+.intro_text h2 {
+  text-shadow: 1px 1px 10px rgba(0,0,255, 0.8);
+  font-weight: 600;
+}
+
 .about_text {
   display: block;
   text-align: center;

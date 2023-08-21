@@ -5,8 +5,6 @@ Technologies: OpenFrameworks, OpenGL, NVIDIA StyleGAN2-ADA (Pytorch), Skanect Pr
 
 I was inspired by Sara Ahmed's 'Queer Phenomenology' to work with form and image in a way that disrupted their apparent physical orientation, as a homage to the disrupted spatial social/political relations queerness offers, touched upon in her book. Derived from this, the light shades and GAN film each offer an interpretation of the ‘hollow-face illusion’. The archway is painted cobalt blue in homage to Derek Jarman, who proposes similar aesthetic philosophies to Ahmed in his 1991 film ‘Blue’.
 
-***Scroll down for a closer look* ↓**
-
 <div class="mkd_img">
 <img src="/images/articles/pool_1.jpg" alt="Pool (Orientation 1)">
 <img src="/images/articles/pool_2.jpg" alt="Pool (Orientation 1)">
@@ -14,7 +12,7 @@ I was inspired by Sara Ahmed's 'Queer Phenomenology' to work with form and image
 <img src="/images/articles/pool_4.jpg" alt="Pool (Orientation 1)">
 </div>
 
-### Demos:
+<b>Demos:</b>
 
 <div class="video_container">
    <iframe title="vimeo-player" src="https://player.vimeo.com/video/787402312?h=2c1a200f81&loop=1&byline=0&portrait=0" class="h_video" frameborder="0" allowfullscreen></iframe> 
@@ -22,7 +20,7 @@ I was inspired by Sara Ahmed's 'Queer Phenomenology' to work with form and image
 
 PLA light shades with Arduino programmed sweep lighting, interactive glitch graphics using OpenFrameworks GLSL and Xbox Kinect, StyleGAN2-ADA video. Ambient audio. 
 
-**Closeup of 3D Printed PLA Light Shades:**
+<b>Closeup of 3D Printed PLA Light Shades:</b>
 
 <div class="video_container">
    <div class="video_flexbox">
@@ -34,7 +32,7 @@ PLA light shades with Arduino programmed sweep lighting, interactive glitch grap
 The light shades were modelled using Xbox Kinect, Skanect Pro and Fusion 360. 3D scanned faces were used to deform the spherical geometry.
 An Arduino controls and powers the sweep lighting effect across a 5V neopixel LED array.
 
-**Closeup of Screen 1:**
+<b>Closeup of Screen 1:</b>
 
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/787418805?h=584c2aef00" class="h_video" frameborder="0" allowfullscreen></iframe> 
 
@@ -42,13 +40,13 @@ Audience-interactive graphics feed, exhibited on the uppermost screen of the but
 
 Kinect sensor surveys the spatial and chromatic parameters of the gallery space using LIDAR and camera, relaying live metrics to Open Frameworks sketch which modulates the screen graphics.
 
-**Closeup of Screen 2:**
+<b>Closeup of Screen 2:</b>
 
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/787403229?h=f453b0ce08" class="h_video" frameborder="0" allowfullscreen></iframe> 
 <div class="mkd_img"><p>Nonlinear Circular Interpolation.</p>
 <br>NVIDIA StyleGAN2-ADA Machine Learning video trained and rendered with Google Colab Pro</div>  
   
-**Concept image, initial idea:**
+<b>Concept image, initial idea:</b>
 
 <div class="mkd_img"> 
 

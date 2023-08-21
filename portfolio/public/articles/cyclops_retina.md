@@ -20,7 +20,7 @@ I assisted Elliot Woods (of Kimchi and Chips) and Rosa Menkman with calibration 
     </div> 
     <iframe title="vimeo-player" src="https://player.vimeo.com/video/816545499?h=5dbbfdc168" class="h_video" frameborder="0" allowfullscreen></iframe> 
 </div>
-
+<br>
 <b>Technical Explanation:</b>
 
 This iteration of ‘[Light Barrier](https://www.kimchiandchips.com/works/lightbarrier/)’ by Kimchi and Chips was realised in collaboration with Rosa Menkman, an artist known for her work with [glitch](https://beyondresolution.info/PORTFOLIO). Given the background of each artist, the intention was to create a film piece - this differs from previous ‘Light Barrier’s, which had until now displayed simple geometries rather than following any set narrative. The film would have to be visually compatible with the Light Barrier system, which operates similarly to a [light field camera](https://en.wikipedia.org/wiki/Light_field_camera) and requires high contrast imagery with a reasonably low level of detail. 
@@ -51,4 +51,4 @@ During this stage I used A1111 to rapidly generate example footage, which I comb
     <iframe title="vimeo-player" src="https://player.vimeo.com/video/816643639?h=ea765e4aea" class="h_video" frameborder="0" allowfullscreen></iframe> 
 </div>
 
-Note: additional documentation pending.
+<b>* More TBA</b>

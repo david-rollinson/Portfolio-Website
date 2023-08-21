@@ -81,8 +81,15 @@ export default {
 </script>
 
 <style>
+
 body {
   --margin-val: 16px;
+}
+
+b {
+  font-family: Codystar;
+  font-weight: 600;
+  text-shadow: 1px 1px 5px rgba(0,0,255, 0.8);
 }
 
 .center_text {
