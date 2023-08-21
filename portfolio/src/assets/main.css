@@ -1,36 +1,408 @@
-
 @import './base.css';
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Codystar:wght@400&family=Montserrat+Alternates:ital,wght@1,400&display=swap');
+
+/* import FONTs here to satisfy desktop */
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Codystar:wght@400&display=swap');
+
+html {
+  min-height: 100vh;
+  max-width: 100vw;
+  /* set a new CURSOR across the whole window */
+  cursor: crosshair;
+}
 
 #app {
   /*  Alter column widths. */
-  max-width: 1280px;
-  margin: 0 auto;
+  min-height: 100%;
+  max-width: 100vw;
+  font-family: system-ui;
   /* Site padding */
-  padding: 2rem;
+  /* padding: 2rem; */
   /* Fonts */
-  font-family: 'Codystar', cursive;
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'Codystar', sans-serif;
   font-family: 'Assistant', sans-serif;
   font-weight: normal;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+::selection {
+  background-color: transparent;
+  color: rgba(255,0,0, 0.8);
+  text-shadow: 0px 0px 4px rgba(255,0,0,0.2);
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+strong { 
+  font-weight: 400;
+}
+
+b {
+  font-weight: 400;
+}
+
+.navigation-panel {
+  position: relative;
+  margin-left: 2vw;
+  margin-right: auto;
+  height: fit-content;
+}
+
+/*apply to all nav children*/
+nav > * {
+  /*text*/
+  font-size: 24px;
+  letter-spacing: 2ch;
+  font-family: Codystar;
+  font-weight: 400;
+  text-align: left;
+  text-decoration: none;
+  height: fit-content;
+}
+
+a {
+  text-decoration: wavy overline yellow;
+  /* text-underline-offset: -1rem; */
+  color: rgb(92, 92, 212);
+  position: relative;
+}
+
+nav a {
+  /*text*/
+  font-size: 24px;
+  letter-spacing: 5vw;
+  line-height: 3.2ch;
+  font-weight:800;
+  text-align: left;
+  text-decoration: none;
+  text-shadow: 5px 5px 8px;
+
+  /*border*/
+  border: none;
+  border-radius:0%;
+  border-color: transparent;
+
+  /*positioning*/
+  position: relative;
+  /* text-indent: 1.5ch; */
+  padding-left: 0%;
+  margin-left: 0;
+  width: fit-content;
+
+  /*display mode*/
+  display: flex;
+  flex-wrap: wrap;
+
+  /*pointer events*/
+  cursor: cell;
+  pointer-events: all;
+  color: blue;
+  /* background: transparent; */
+  
+  /* sets position in front / behind  */
+  z-index: 1;
+  /* setup transition*/
+  transition: 0.8s;
+  /*set filter*/
+  filter: blur(1.8px);
+  /* filter: drop-shadow(0 0 0); */
+
+  /*animation setup*/
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-name: floater;
+  animation-duration: 7s;
+  /* animation-direction: alternate-reverse; */
+  animation-timing-function: ease-in-out;
+}
+
+nav a:hover {
+  background: yellow;
+  border-radius:50%;
+  padding-left: 5%;
+  max-width: fit-content;
+  filter: blur(0px);
+  filter: drop-shadow(0.2rem 0.2rem 1rem yellow);
+  text-shadow: 0px 0px 9px;
+  transition: 1s;
+}
+
+a:hover {
+  cursor: cell;
+}
+
+/*Below is for when transferring styles between active classes, i.e. when the router link matches the current page.*/ 
+nav a.router-link-exact-active {
+  background: white;
+  border-radius: 50%;
+  padding-left: 20px;
+  filter:blur(0px);
+  transition: 1s;
+}
+
+nav a.router-link-exact-active:hover {
+  
+}
+
+/*set animation params*/
+@keyframes floater {
+  from { transform: translate(0,  -2px); 
+         letter-spacing: 2ch; }
+  50%  { transform: translate(-5px, 15px); 
+         letter-spacing: 2.4ch; }  
+  to   { transform: translate(0, -2px); 
+         letter-spacing: 2ch; }  
+}
+
+header {
+  font-size: 20px;
+  line-height: 1.5;
+  height: fit-content;
+  text-align: left;
+  width: 300px;
+  padding: 24px;
+}
+
+h2 {
+  color: blue;
+  font-weight: 400;
+  font-family: Codystar;
+}
+
+h3 {
+  color: blue;
+  font-weight: 100;
+  font-family: Assistant;
+  font-size: 22px;
+}
+
+.intro_text {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 200px;
+  max-width: 60vw;
+}
+
+.intro_text h2 {
+  text-shadow: 1px 1px 10px rgba(0,0,255, 0.8);
+  font-weight: 600;
+}
+
+.about_text {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 200px;
+  max-width: 60vw;
+}
+
+body {
+  min-height: 50vh;
+
+  font-family: Assistant;
+  font-size: 20px;
+
+  line-height: 1.5;
+  text-align: left;
+
+  padding-bottom: 5vh;
+}
+
+/* import FONTs here to satisfy mobile view */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Codystar';
+  src: url(./fonts/Codystar.ttf);
+
+}
+
+/* assistant-200 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Assistant';
+  font-style: normal;
+  font-weight: 200;
+  src: url('../fonts/assistant-v18-latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* assistant-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Assistant';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/assistant-v18-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* assistant-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Assistant';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/assistant-v18-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* assistant-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Assistant';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/assistant-v18-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* assistant-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Assistant';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/assistant-v18-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* assistant-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Assistant';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/assistant-v18-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* assistant-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Assistant';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/assistant-v18-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+button {
+  cursor: cell;
+}
+
+router-link > * {
+  cursor: cell;
+}
+
+/*set  media rule*/
+@media (max-width: 900px) {
 
   #app {
-    /* Grid Layout for Site  */
-    /* display: grid; */
-    /* grid-template-columns: 1fr 1fr; */
-    /* padding: 0 2rem; */
+    /*turn off overflow throughout the app*/
+    overflow: hidden;
   }
+
+  a {
+    text-decoration: wavy underline yellow;
+    -webkit-text-decoration-line: wavy underline yellow;
+    color: rgb(92, 92, 212);
+  }
+
+  header {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 100vw;
+    height: fit-content;
+  }
+
+  .logo {
+    margin: 0 2rem 0 0;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  body {
+    text-align: left;
+    font-size: 18px;
+  }
+
+  header.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  nav > * {
+    /*text*/
+    font-size: 24px;
+    letter-spacing: 2ch;
+    animation-name: none;
+  }
+
+  nav {
+    text-align: left;
+    font-size: 1rem;
+  }
+
+  nav a {
+    filter: blur(0px);
+    text-indent: 0ch;
+    text-shadow: none;
+    /*animation setup*/
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-name: floater_mob;
+    animation-duration: 7s;
+  }
+
+  nav a:hover{
+    background: yellow;
+    border-radius:50%;
+    padding-left: 5%;
+    max-width: fit-content;
+    filter: blur(0px);
+    filter: drop-shadow(0.2rem 0.2rem 1rem yellow);
+    text-shadow: 0px 0px 9px;
+  }
+
+  
+
+    /*set animation params*/
+  @keyframes floater_mob {
+    from { transform: translate(0,  0px); }
+    35%  { transform: translate(3px, 7px); } 
+    65%  { transform: translate(-5px, 15px); }  
+    to   { transform: translate(0, 0px); }  
+  }
+
+  nav a:hover {
+    text-shadow: none;
+  }
+
+  nav a:active {
+    filter: blur(1.8px);
+  }
+
+  .intro_text {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 75vw;
+  }
+
+  nav a.router-link-active {
+    background: yellow;
+    border-radius:50%;
+    padding-left: 5%;
+    max-width: fit-content;
+    filter: blur(0px);
+    filter: drop-shadow(0.2rem 0.2rem 1rem yellow);
+  }
+
+  nav a:hover {
+    background: none;
+    border: none;
+    filter: none;
+    border-radius:10%;
+  }
+
+  nav a.router-link-exact-active:hover {
+  background: yellow;
+  filter: none;
+  border-radius:50%;
+  filter: drop-shadow(0.2rem 0.2rem 1rem yellow);
+  transition: 0.5s;
+}
+
 }
