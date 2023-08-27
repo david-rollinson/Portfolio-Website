@@ -8,7 +8,7 @@
         <h2>{{ project.name }}</h2>
         <!-- <div v-html="dataToParse" class="markdown_wrapper"></div> -->
         <div v-if="dataToParse === ''" class="await_data">Loading...</div>
-        <div v-else><Transition name="fade" mode="out-in"><div v-html="dataToParse" class="markdown_wrapper"></div></Transition></div>
+        <div v-else><div v-html="dataToParse" class="markdown_wrapper"></div></div>
       </div>
       <div class="back-home">
         <a @click="nextId" v-if="withinProjectArray">Next →</a>
@@ -104,7 +104,14 @@ b {
   max-width: 60vw;
   overflow: hidden;
   font-weight: 100;
-  
+  animation-name: fadeIn;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 .await_data {
