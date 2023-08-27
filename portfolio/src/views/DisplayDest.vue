@@ -6,7 +6,9 @@
       </div>
       <div class="intro_text">
         <h2>{{ project.name }}</h2>
-        <div v-html="dataToParse" class="markdown_wrapper"></div>
+        <!-- <div v-html="dataToParse" class="markdown_wrapper"></div> -->
+        <div v-if="dataToParse === ''" class="await_data">Loading...</div>
+        <div v-else><Transition name="fade" mode="out-in"><div v-html="dataToParse" class="markdown_wrapper"></div></Transition></div>
       </div>
       <div class="back-home">
         <a @click="nextId" v-if="withinProjectArray">Next →</a>
@@ -28,7 +30,7 @@ export default {
   },
   data() {
     return {
-      dataToParse: "Loading...", //initialise as empty, load in later.
+      dataToParse: "", //initialise as empty, load in later.
       withinProjectArray: true,
     };
   },
@@ -49,8 +51,7 @@ export default {
   },
   methods: {
     async markdownToHtml(_id) {
-      if (sourceData.projects[_id - 1].template != "") {
-        //check if there is data to load.
+      if (sourceData.projects[_id - 1].template != "") { // check if there is data to load.
         let newContent = await fetch(sourceData.projects[_id - 1].template)
           .then((response) => response.text())
           .then((r) => marked.parse(r));
@@ -102,6 +103,12 @@ b {
   margin-bottom: 200px;
   max-width: 60vw;
   overflow: hidden;
+  font-weight: 100;
+  
+}
+
+.await_data {
+  max-width: 60vw;
   font-weight: 100;
 }
 
