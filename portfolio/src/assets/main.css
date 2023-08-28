@@ -39,9 +39,12 @@ b {
 
 .navigation-panel {
   position: relative;
-  margin-left: 2vw;
   margin-right: auto;
   height: fit-content;
+  width: fit-content;
+  padding-left: 2vw;
+  padding-right: 3vw;
+  padding-bottom: 20px;
 }
 
 /*apply to all nav children*/
@@ -177,6 +180,9 @@ h3 {
   margin-right: auto;
   margin-bottom: 200px;
   max-width: 60vw;
+  background-color: rgba(255,255,255, 0.3);
+  padding: 40px;
+  border-radius: 25px;
 }
 
 .intro_text h2 {

@@ -7,7 +7,7 @@
       <div class="intro_text">
         <h2>{{ project.name }}</h2>
         <!-- <div v-html="dataToParse" class="markdown_wrapper"></div> -->
-        <div v-if="dataToParse === ''" class="await_data">Loading</div>
+        <div v-if="dataToParse === ''" class="await_data"><br>Loading</div>
         <div v-else><div v-html="dataToParse" class="markdown_wrapper"></div></div>
       </div>
       <div class="back-home">
@@ -121,20 +121,20 @@ b {
 
 .await_data:after {
   content: '';
-  animation: loadingDots 1s infinite;
+  animation: loadingDots 1.5s infinite;
 }
 
 @keyframes loadingDots {
-  0% {
+  0%, 100% {
     content: '';
   }
-  33% {
+  25% {
     content: '. ';
   }
-  66% {
+  50% {
     content: '. . ';
   }
-  100% {
+  75% {
     content: '. . . ';
   }
 }

@@ -1,7 +1,5 @@
 <template>
   <div>
-    <header></header>
-
     <body>
       <div class="intro_text">
         <h3>
