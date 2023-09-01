@@ -15,11 +15,12 @@ export default {
     };
   },
   mounted() {
-    // window.addEventListener('wheel', this.handleScroll);
+    if(window.innerWidth > 900){
+      window.scrollTo({ top: 0, left: 0 });
+    }
   },
   unmounted() {
-    // window.removeEventListener('wheel', this.handleScroll);
-    // this.deltaCount = 0;
+
   },
   methods: {
     mouseEnter(event) {
@@ -113,6 +114,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20vh;
 }
 .projects {
   display: grid;
@@ -187,6 +189,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 0;
   }
   .projects {
     display: grid;

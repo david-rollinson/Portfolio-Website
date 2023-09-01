@@ -1,8 +1,32 @@
+<script>
+export default {
+  data() {
+    return {
+    };
+  },
+  mounted() {
+    window.scrollTo({ top: 0, left: 0 });
+  },
+  unmounted() {
+
+  },
+  methods: {
+    handleInfoScroll (event) {
+
+    }
+  },
+  props: {
+
+  },
+};
+</script>
+
 <template>
   <div>
     <header></header>
 
     <body>
+      <div class="cv_container"></div>
       <iframe
         id="cv_pdf"
         src="files/David_Rollinson_CV_CS.pdf"
@@ -13,6 +37,10 @@
 </template>
 
 <style scoped>
+.cv_container {
+  margin-top: 25vh;
+}
+
 #cv_pdf {
   display: flex;
   justify-content: center;
@@ -26,6 +54,9 @@
 /*set  media rule*/
 @media (max-width: 900px) {
   /* sets the min width of these particular style attributes */
+  .cv_container {
+    margin-top: 0;
+  }
 
   #cv_pdf {
     justify-content: center;

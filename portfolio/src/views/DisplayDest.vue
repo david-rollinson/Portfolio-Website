@@ -4,7 +4,7 @@
       <div class="details">
         <!-- <h3>{{ project.description }}</h3> -->
       </div>
-      <div class="intro_text">
+      <div class="article_text">
         <h2>{{ project.name }}</h2>
         <!-- <div v-html="dataToParse" class="markdown_wrapper"></div> -->
         <div v-if="dataToParse === ''" class="await_data"><br>Loading</div>
@@ -39,6 +39,7 @@ export default {
     // axios.get('http://localhost:1337/api/articles/1').then(response => {
     // console.log(response);
     // });
+    window.scrollTo({ top: 0, left: 0 });
     this.markdownToHtml(this.id); //load in markdown and save to data variable.
     this.checkId();
   },
@@ -100,7 +101,7 @@ b {
 .markdown_wrapper {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 200px;
+  margin-bottom: 40px;
   max-width: 60vw;
   overflow: hidden;
   font-weight: 100;

@@ -1,3 +1,26 @@
+<script>
+export default {
+  data() {
+    return {
+    };
+  },
+  mounted() {
+    window.scrollTo({ top: 0, left: 0 });
+  },
+  unmounted() {
+
+  },
+  methods: {
+    handleInfoScroll (event) {
+
+    }
+  },
+  props: {
+
+  },
+};
+</script>
+
 <template>
   <div>
     <header></header>

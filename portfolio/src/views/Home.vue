@@ -58,6 +58,7 @@
 .user-directive {
   --fontSize: 24px;
   position: relative;
+  top: -50px;
   bottom: 0px;
   width: var(--fontSize);
   height: var(--fontSize);
@@ -119,6 +120,7 @@ export default {
     }
   },
   mounted () {
+    window.scrollTo({ top: 0, left: 0 });
     window.addEventListener('wheel', this.handleScroll);
     window.addEventListener('touchmove', this.handleScroll);
   },

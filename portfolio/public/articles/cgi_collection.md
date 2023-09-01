@@ -1,6 +1,4 @@
-Personal projects in Blender. These are fully rendered video/image works as opposed to generative or interactive tools. There are more in the making. 
-
-<b>Facade modelling (WIP), geometry nodes project:</b>
+Facade modelling, using an image of Poznan town houses as reference. Various procedural techniques employed, using Blender geometry and shader nodes.
 <div class="mkd_img"> 
 
 |![CGI](/images/articles/cgi_1.png)|
@@ -24,8 +22,6 @@ Inspired by Forest Swords - Crow music video by Alexey Marfin, [here](https://al
 
 </div>
 <br>
-<p>Facade modelling, using an image of Poznan town houses as reference. I used geometry nodes to create the roof tiles, and have parented each object in preparation for rendering procedural buildings using geometry nodes. </p>
-
 <b>* More TBA</b>
 
 <!-- <b>Furniture modelling:</b>

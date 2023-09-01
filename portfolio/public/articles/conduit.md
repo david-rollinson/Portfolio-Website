@@ -1,7 +1,4 @@
-Dynamic sculpture work for ‘Third___’ online digital arts show, exhibited May 2021. Solo lockdown project, titled ‘CONDUIT’.  
-
-Materials: *Black plastic truncated cylinder vessel, aquarium tubing, hydroxyethyl cellulose in Black, three 12V vacuum pumps.*
-Technologies: *Arduino using custom electronics. JUCE delay plugin for Ableton Live (not shown).*
+This project serves as an applied instance of a wider investigation into interaction styles with material states and behaviour. After reading the premise of vital materialism set out by Jane Bennett in her book 'Vibrant Matter', I became interested in artistic spaces that foster hyper-sensitivity to materials as a way to align an audience with earth-centred principles.
 
 <div class="mkd_img"> 
 
@@ -10,19 +7,13 @@ Technologies: *Arduino using custom electronics. JUCE delay plugin for Ableton L
 ||
 
 </div>
-<br>Note: this was originally conceived as an audience-interactive project, but had to be reconfigured due to lockdown restrictions. 
 
-<b>Interactive premise:</b>
+Kinetic sculpture solo project for digital arts exhibition, 'Third___' May 2021. Conceived as interactive, but reconfigured due to COVID-19 restrictions.   
 
-A black plastic vessel holds an oily substance. Aquarium tubes are arranged running from three vacuum pumps into the base of the vessel. The three pumps read the weight of the material in each of the three glasses and modulate their air output accordingly.  
-These pumps are controlled by an Arduino control board to the right of the vessel. The pumps funnel air into the base of the vessel, creating air pockets beneath the surface of the liquid that rise to the top as bubbles. The greater the force, the more bubbles that surface.
+Materials: Black plastic truncated cylinder vessel, aquarium tubing, hydroxyethyl cellulose in Black, three 12V vacuum pumps.
+Technologies: Arduino using custom electronics. JUCE delay plugin for Ableton Live (not shown).
 
-<b>Concept:</b>
-
-This project was a fledgling investigation into using multiple material states in a dynamic sculpture work. I was comparing patterns of contemporary consumer behaviour with the practice of hoarding and wanted to investigate whether alternative interactions could effect the way we value materials and material processes. My aim was to slow down the audiences’ interface with the artwork materials, revealing them as products of their own systems.  
-The electronics and programming aspects of this work were the most challenging, as they were entirely self-directed with no prior physical computing experience and little to no technician support. The project contained various areas of planning which were new to me, including electronics component and material sourcing. **↓**
-
-<b>A closer look:</b>
+A black plastic vessel holds an oily substance. Aquarium tubes are arranged running from three vacuum pumps into the base of the vessel. A system of arduino electonics senses the weight of the material in each of the three glasses and modulates the air output of each pump accordingly, causing bubbles rise to the surface. 
 
 <div class="mkd_img"> 
 
@@ -32,7 +23,7 @@ The electronics and programming aspects of this work were the most challenging, 
 
 </div>
 
-Three glasses containing differing quantities of water and sand are placed on top of three force-sensitive resistors, which read the force placed upon them by each material. The weight values are sent as parameters to the Arduino board via a serial USB connection. 
+Closeup of vacuum pumps and electronics. The Arduino board receives the weight values of the three glasses and modulates power to each corresponding vacuum pump motor (using two motor driver shields).
 
 <div class="mkd_img"> 
 
@@ -42,10 +33,7 @@ Three glasses containing differing quantities of water and sand are placed on to
 
 </div>
 
-Closeup of vacuum pumping system and the custom electronics. The Arduino board receives the weight values of the three glasses and modulates the power to each corresponding vacuum pump motor (this process is made easier by using two motor driver shields, seen as the thick black strip in the center of the breadboard).
-
-An air intake valve is located at the top of each white cylindrical pump motor. From here the motor pushes this air through the release valve on the end of each motor, funnelling air through the aquarium tubing and into the base of the vessel.  
-The less force, the lower the air output. The liquid shivers and froths as air rises to the surface.  
+An air intake valve is located at the top of each pump. From here the motor pushes air through the release valve, funnelling air through the aquarium tubing and into the base of the vessel. The less force, the lower the air output.
 
 <div class="mkd_img"> 
 
