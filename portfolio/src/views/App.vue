@@ -1,7 +1,7 @@
 <!-- SPA: here we're only changing views -->
 <template>
   <header>
-    <div class="wrapper">
+    <div class="nav_wrapper">
       <TheNavigation />
     </div>
   </header>

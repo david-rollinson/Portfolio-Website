@@ -1,9 +1,9 @@
 <template>
   <div>
     <section class="project">
-      <div class="details">
+      <!-- <div class="details"> -->
         <!-- <h3>{{ project.description }}</h3> -->
-      </div>
+      <!-- </div> -->
       <div class="article_text">
         <h2>{{ project.name }}</h2>
         <!-- <div v-html="dataToParse" class="markdown_wrapper"></div> -->
