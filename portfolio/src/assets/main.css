@@ -44,16 +44,13 @@ b {
   left: 0px;
   top: 0px;
   width: fit-content;
-  padding-left: 2vw;
-  padding-right: 3vw;
-  padding-top: 2vw;
+  padding: 2vw;
   padding-bottom: 20px;
-  z-index: 1;
-  background: radial-gradient(ellipse at top left, transparent 10%, white 40%, transparent 70%);
-
   transform-origin: top left;
   /* transform: scale(0.7); */
   /* background-color: grey; */
+  z-index: 1;
+  background: radial-gradient(ellipse at top left, transparent 10%, white 40%, transparent 70%);
 }
 
 /*apply to all nav children*/
@@ -167,7 +164,6 @@ header {
   font-size: 20px;
   line-height: 1.5;
   text-align: left;
-  width: 300px;
   padding: 24px;
 }
 
@@ -175,6 +171,7 @@ h2 {
   color: blue;
   font-weight: 400;
   font-family: Codystar;
+  margin: 0;
 }
 
 h3 {
@@ -212,7 +209,7 @@ h3 {
   font-weight: 600;
 }
 
-.article_text {
+.article_container {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20vh;
@@ -341,15 +338,16 @@ router-link > * {
 
   .navigation-panel {
     position: relative;
-    margin-right: auto;
+    display: block;
     height: fit-content;
-    left: 0px;
+
     top: 0px;
-    margin-top: 0px;
-    margin-left: 0px;
-    padding-left: 0px;
-    width: fit-content;
-    /* background: radial-gradient(ellipse at left, white 20%, transparent 70%); */
+    margin: 0px;
+
+    max-width: 90vw;
+    min-width: 50vw;
+
+    background: none;
   }
 
   .about_text {
@@ -366,9 +364,18 @@ router-link > * {
     display: flex;
     justify-content: flex-start;
     height: fit-content;
-    max-width: 100vw;
-    padding-top: 0px;
-    padding-left: 0px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .nav_wrapper {
+    display: block;
+    position: relative;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    background: radial-gradient(ellipse at top left, transparent 10%, white 40%, transparent 70%);
   }
   
   .logo {
@@ -380,6 +387,7 @@ router-link > * {
   }
 
   body {
+    margin: 0px;
     text-align: left;
     font-size: 18px;
   }
@@ -449,17 +457,21 @@ router-link > * {
     padding-top: 0px;
   }
 
-  .article_text {
+  .article_container {
     /* display: block; */
-    padding-top: 0;
+    padding: 0;
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
     max-width: 90vw;
     min-width: 50vw;
-
     background: radial-gradient(ellipse at left, white 20%, transparent 70%), radial-gradient(ellipse at right, white 20%, transparent 70%);
+  }
+
+  .article_content {
+    padding-left: 4vw;
+    padding-right: 4vw;
   }
 
   nav a.router-link-active {

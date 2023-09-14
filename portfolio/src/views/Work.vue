@@ -186,10 +186,9 @@ body {
   }
 
   .grid_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0;
+    display: block;
+    position: relative;
+    margin-top: 5vw;
   }
   .projects {
     display: grid;

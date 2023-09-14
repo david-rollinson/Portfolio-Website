@@ -38,7 +38,8 @@ export default {
 
 <style scoped>
 .cv_container {
-  margin-top: 25vh;
+  position: relative;
+  margin-top: 20vh;
 }
 
 #cv_pdf {
@@ -46,7 +47,7 @@ export default {
   justify-content: center;
   align-items: center;
   margin: auto;
-  width: 70vw;
+  width: 60vw;
   min-height: 100vw;
   margin-bottom: 200px;
 }
@@ -55,7 +56,9 @@ export default {
 @media (max-width: 900px) {
   /* sets the min width of these particular style attributes */
   .cv_container {
-    margin-top: 0;
+    display: block;
+    position: relative;
+    margin-top: 5vw;
   }
 
   #cv_pdf {
@@ -63,7 +66,7 @@ export default {
     align-items: center;
     margin: auto;
     padding: auto;
-    width: 100vw;
+    width: 90vw;
     min-height: 120vw;
     margin-bottom: 200px;
   }

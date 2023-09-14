@@ -4,15 +4,17 @@
       <!-- <div class="details"> -->
         <!-- <h3>{{ project.description }}</h3> -->
       <!-- </div> -->
-      <div class="article_text">
-        <h2>{{ project.name }}</h2>
-        <!-- <div v-html="dataToParse" class="markdown_wrapper"></div> -->
-        <div v-if="dataToParse === ''" class="await_data"><br>Loading</div>
-        <div v-else><div v-html="dataToParse" class="markdown_wrapper"></div></div>
-      </div>
-      <div class="back-home">
-        <a @click="nextId" v-if="withinProjectArray">Next →</a>
-        <RouterLink to="/work" v-if="!withinProjectArray">←Work</RouterLink>
+      <div class="article_container">
+        <div class="article_content">
+            <h2>{{ project.name }}</h2>
+            <!-- <div v-html="dataToParse" class="markdown_wrapper"></div> -->
+            <div v-if="dataToParse === ''" class="await_data"><br>Loading</div>
+            <div v-else><div v-html="dataToParse" class="markdown_wrapper"></div></div>
+          </div>
+          <div class="back-home">
+            <a @click="nextId" v-if="withinProjectArray">Next →</a>
+            <RouterLink to="/work" v-if="!withinProjectArray">←Work</RouterLink>
+        </div>
       </div>
     </section>
   </div>
