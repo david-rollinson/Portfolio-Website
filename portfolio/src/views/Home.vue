@@ -53,6 +53,45 @@
   </div>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      deltaCount: 0,
+    }
+  },
+  mounted () {
+    window.scrollTo({ top: 0, left: 0 });
+    window.addEventListener('wheel', this.handleScroll);
+    window.addEventListener('touchmove', this.handleScroll);
+  },
+  unmounted () {
+    window.removeEventListener('wheel', this.handleScroll);
+    window.removeEventListener('touchmove', this.handleScroll);
+    this.deltaCount = 0;
+  },
+  methods: {
+    handleScroll (event) {
+      //If deltaY (part of the WheelEvent object) is less than doc height i.e. a scroll down past the bottom edge of the page, push to next router page.
+      this.deltaCount += event.deltaY;
+      // console.log(document.body.offsetHeight);
+      if(window.innerHeight + this.deltaCount > document.body.offsetHeight) {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+        this.pushToWork();
+        
+      } else if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+        this.pushToWork();
+      }
+    },
+    pushToWork() {
+      this.$router.push({ name: 'Work' })
+    }
+  }
+}
+
+</script>
+
 <style scoped>
 .note {
   font-weight: 400;
@@ -124,42 +163,3 @@
   }
 }
 </style>
-
-<script>
-export default {
-  data() {
-    return {
-      deltaCount: 0,
-    }
-  },
-  mounted () {
-    window.scrollTo({ top: 0, left: 0 });
-    window.addEventListener('wheel', this.handleScroll);
-    window.addEventListener('touchmove', this.handleScroll);
-  },
-  unmounted () {
-    window.removeEventListener('wheel', this.handleScroll);
-    window.removeEventListener('touchmove', this.handleScroll);
-    this.deltaCount = 0;
-  },
-  methods: {
-    handleScroll (event) {
-      //If deltaY (part of the WheelEvent object) is less than doc height i.e. a scroll down past the bottom edge of the page, push to next router page.
-      this.deltaCount += event.deltaY;
-      // console.log(document.body.offsetHeight);
-      if(window.innerHeight + this.deltaCount > document.body.offsetHeight) {
-        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-        this.pushToWork();
-        
-      } else if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-        this.pushToWork();
-      }
-    },
-    pushToWork() {
-      this.$router.push({ name: 'Work' })
-    }
-  }
-}
-
-</script>

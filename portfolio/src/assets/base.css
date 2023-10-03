@@ -19,8 +19,3 @@
   transition: color 1s, background-color 1s;
   font-display: block;
 }
-
-body {
-  line-height: 1.5;
-  font-size: 15px;
-}

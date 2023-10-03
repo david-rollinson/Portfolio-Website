@@ -1,3 +1,18 @@
+<template>
+  <div>
+    <header></header>
+
+    <body>
+      <div class="cv_container"></div>
+      <iframe
+        id="cv_pdf"
+        src="files/David_Rollinson_CV_CS.pdf"
+        frameborder="0"
+      ></iframe>
+    </body>
+  </div>
+</template>
+
 <script>
 export default {
   data() {
@@ -21,21 +36,6 @@ export default {
 };
 </script>
 
-<template>
-  <div>
-    <header></header>
-
-    <body>
-      <div class="cv_container"></div>
-      <iframe
-        id="cv_pdf"
-        src="files/David_Rollinson_CV_CS.pdf"
-        frameborder="0"
-      ></iframe>
-    </body>
-  </div>
-</template>
-
 <style scoped>
 .cv_container {
   position: relative;
@@ -52,9 +52,8 @@ export default {
   margin-bottom: 200px;
 }
 
-/*set  media rule*/
 @media (max-width: 900px) {
-  /* sets the min width of these particular style attributes */
+
   .cv_container {
     display: block;
     position: relative;
