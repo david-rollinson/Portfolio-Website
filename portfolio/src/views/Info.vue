@@ -44,24 +44,10 @@ export default {
           >
           |
           <a
-            href="https://gitlab.doc.gold.ac.uk/droll002"
-            target="_blank"
-            rel="noreferrer noopener"
-            >Gitlab (University)</a
-          >
-          |
-          <a
             href="https://linkedin.com/in/rollinson-david"
             target="_blank"
             rel="noreferrer noopener"
             >LinkedIn</a
-          >
-          |
-          <a
-            href="https://droll002.notion.site/David-Rollinson-Compiled-Info-077934589fbe40f79015748231abe307"
-            target="_blank"
-            rel="noreferrer noopener"
-            >Prev. Site (defunct)</a
           >
         </h3>
       </div>

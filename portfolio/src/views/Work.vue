@@ -59,8 +59,6 @@ export default {
 
 <template>
   <div>
-    <header></header>
-
     <body>
       <!-- <img v-if="isImageLoaded" :src="imageUrl" /> -->
       <!-- <div v-for="imageSrc in newImages" style="display: inline-block;">
@@ -70,7 +68,6 @@ export default {
         <div class="projects">
           <RouterLink
             class="grid_item"
-            style="cursor: cell"
             v-for="project in projects"
             :key="project.id"
             :to="{
