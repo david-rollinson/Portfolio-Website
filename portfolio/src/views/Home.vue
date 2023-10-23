@@ -22,14 +22,12 @@
               >
             </p>
             <span style="font-weight: 400">David Rollinson</span> is a London-based creative
-            technologist who vitalises spaces and materials with interactive
-            technologies. At the centre of their work in experiential environment
-            design and development are computational systems used to investigate
-            phenomenology and social valuation. Their creative skills readily to
-            hand include experience design, 2D/3D graphical programming, CGI
-            design and animation, custom electronics and creative ML. Last year
-            they combined these into a hypermedia installation exhibited at
-            Bargehouse Gallery, Southbank.
+            technologist vitalising spaces and materials with interactive
+            technologies. Central to their multimedia art and design work are computational 
+            systems used to examine subjective phenomena and social valuation. 
+            Their creative skills to hand include 2D/3D graphical programming, 
+            CGI, experience design, custom electronics and creative ML. Last year 
+            they combined these into a hypermedia installation exhibited at Bargehouse Gallery, Southbank.
             <p>
               <span style="font-weight: 400">Recently</span> they were a resident
               creative technologist at
