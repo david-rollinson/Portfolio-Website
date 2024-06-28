@@ -1,9 +1,9 @@
 <template>
   <div>
-    <header></header>
-
     <body>
-      <div class="intro_text">
+      <div class="intro_container">
+
+        <div class="intro_text">
         <h3>
           <p class="note">
             † Note: See this website's development on my
@@ -32,9 +32,12 @@
             Light Barrier 2.4' by Kimchi and Chips with Rosa Menkman.
           </p>
         </h3>
-      </div>
-      <div class="user-directive">
-      <p><a @click="pushToWork">⤑</a></p>
+        </div>
+
+        <div class="user-directive">
+        <p><a @click="pushToWork">⤑</a></p>
+        </div>
+
       </div>
     </body>
   </div>
