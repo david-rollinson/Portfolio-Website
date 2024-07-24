@@ -35,10 +35,4 @@ Closeup of vacuum pumps and electronics. The Arduino board receives the weight v
 
 An air intake valve is located at the top of each pump. From here the motor pushes air through the release valve, funnelling air through the aquarium tubing and into the base of the vessel. The less force, the lower the air output.
 
-<div class="mkd_img"> 
-
-|![CONDUIT](/images/articles/conduit_5.jpg)|
-|:--:| 
-||
-
 </div>
