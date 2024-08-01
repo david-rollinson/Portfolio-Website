@@ -15,7 +15,7 @@
             >
             . Scroll down or use the navigation panel to see recent projects.
           </p>
-          <span style="font-weight: 400">David Rollinson</span> is a London-based creative technology professional currently providing technical direction and support to animated feature films. Central to their work is their interest in creative programming for space and screen. They have worked on projects from CGI and animation to graphical programming, custom electronics, installation design and HCI. They developed this website along with other interactive web-based experiences and last year exhibited a hypermedia installation at Bargehouse Gallery, Southbank.
+          <span style="font-weight: 400">David Rollinson</span> is a London-based creative technology professional currently providing technical direction and support to animated feature films. Central to their work is their interest in creative computation for space and screen. They have worked on projects from CGI and animation to graphical programming, custom electronics, installation design and HCI. They developed this website along with other interactive web-based experiences and last year exhibited a hypermedia installation at Bargehouse Gallery, Southbank.
           <p>
             <span style="font-weight: 400">Recently</span> they were a resident
             computational artist at
