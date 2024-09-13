@@ -5,10 +5,10 @@
     <body>
       <div class="about_text" style="height: 50vh">
         <h3>
-          <span style="letter-spacing: 1vw; text-align: center"
-            >All enquiries: davrc . me @ gmail . com</span
+          All enquiries:<span style="letter-spacing: 1vw; text-align: center"
+            > davrc . me @ gmail . com</span
           >
-          <p></p>
+          <p>CV available upon request.</p>
           <br />
           <br /><span style="font-weight: 800; font-family: Codystar"
             >Elsewhere >
