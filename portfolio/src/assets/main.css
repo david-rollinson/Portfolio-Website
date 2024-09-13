@@ -6,14 +6,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Codystar:wght@400&display=swap');
 
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: 'Codystar';
   src: url(./fonts/Codystar.ttf);
 }
 
 /* assistant-200 - latin */
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: 'Assistant';
   font-style: normal;
   font-weight: 200;
@@ -22,7 +22,7 @@
 
 /* assistant-300 - latin */
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: 'Assistant';
   font-style: normal;
   font-weight: 300;
@@ -31,7 +31,7 @@
 
 /* assistant-regular - latin */
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: 'Assistant';
   font-style: normal;
   font-weight: 400;
@@ -40,7 +40,7 @@
 
 /* assistant-500 - latin */
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: 'Assistant';
   font-style: normal;
   font-weight: 500;
@@ -49,7 +49,7 @@
 
 /* assistant-600 - latin */
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: 'Assistant';
   font-style: normal;
   font-weight: 600;
@@ -58,7 +58,7 @@
 
 /* assistant-700 - latin */
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: 'Assistant';
   font-style: normal;
   font-weight: 700;
@@ -67,7 +67,7 @@
 
 /* assistant-800 - latin */
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: 'Assistant';
   font-style: normal;
   font-weight: 800;
@@ -134,7 +134,7 @@ h3 {
   font-size: 22px;
 }
 
-strong { 
+strong {
   font-weight: 400;
 }
 
@@ -153,11 +153,11 @@ a:hover {
   cursor: cell;
 }
 
-router-link > * {
+router-link>* {
   cursor: cell;
 }
 
-nav > * {
+nav>* {
   /*text*/
   font-size: 24px;
   letter-spacing: 2ch;
@@ -173,14 +173,14 @@ nav a {
   font-size: 24px;
   letter-spacing: 5vw;
   line-height: 3.2ch;
-  font-weight:800;
+  font-weight: 800;
   text-align: left;
   text-decoration: none;
   text-shadow: 5px 5px 8px;
 
   /*border*/
   border: none;
-  border-radius:0%;
+  border-radius: 0%;
   border-color: transparent;
 
   /*positioning*/
@@ -199,7 +199,7 @@ nav a {
   pointer-events: all;
   color: blue;
   /* background: transparent; */
-  
+
   /* sets position in front / behind  */
   z-index: 1;
   /* setup transition*/
@@ -219,7 +219,7 @@ nav a {
 
 nav a:hover {
   background: white;
-  border-radius:50%;
+  border-radius: 50%;
   padding-left: 3vw;
   max-width: fit-content;
   filter: blur(0px);
@@ -228,12 +228,12 @@ nav a:hover {
   transition: 1s;
 }
 
-/*Below is for when transferring styles between active classes, i.e. when the router link matches the current page.*/ 
+/*Below is for when transferring styles between active classes, i.e. when the router link matches the current page.*/
 nav a.router-link-exact-active {
   background: yellow;
   border-radius: 50%;
   padding-left: 3.5vw;
-  filter:blur(0px);
+  filter: blur(0px);
   transition: 1s;
   filter: drop-shadow(0.2rem 0.2rem 1rem aliceblue);
 }
@@ -244,8 +244,8 @@ nav a.router-link-exact-active:hover {
 
 ::selection {
   background-color: transparent;
-  color: rgba(255,0,0, 0.8);
-  text-shadow: 0px 0px 4px rgba(255,0,0,0.2);
+  color: rgba(255, 0, 0, 0.8);
+  text-shadow: 0px 0px 4px rgba(255, 0, 0, 0.2);
 }
 
 /* CUSTOM CLASSES --------------------------*/
@@ -284,13 +284,13 @@ nav a.router-link-exact-active:hover {
   align-items: center;
   justify-content: center;
   /* background-color: rgba(255,255,255, 0.3); */
-  background: radial-gradient(ellipse at left, rgba(255,255,255,0.4) 20%, transparent 70%), radial-gradient(ellipse at right, rgba(255,255,255,0.4) 20%, transparent 70%);
+  background: radial-gradient(ellipse at left, rgba(255, 255, 255, 0.4) 20%, transparent 70%), radial-gradient(ellipse at right, rgba(255, 255, 255, 0.4) 20%, transparent 70%);
   padding: 40px;
   border-radius: 25px;
 }
 
 .intro_text h2 {
-  text-shadow: 1px 1px 10px rgba(0,0,255, 0.8);
+  text-shadow: 1px 1px 10px rgba(0, 0, 255, 0.8);
   font-weight: 600;
 }
 
@@ -302,12 +302,12 @@ nav a.router-link-exact-active:hover {
   max-width: 60vw;
   /* background: radial-gradient(ellipse at top, transparent 50%, rgba(0,0,100,0.1) 100%),
   radial-gradient(ellipse at bottom, transparent 50%, rgba(0,0,100,0.1) 100%); */
-  background: radial-gradient(ellipse at left, rgba(255,255,255,0.4) 20%, transparent 70%), radial-gradient(ellipse at right, rgba(255,255,255,0.4) 20%, transparent 70%);
+  background: radial-gradient(ellipse at left, rgba(255, 255, 255, 0.4) 20%, transparent 70%), radial-gradient(ellipse at right, rgba(255, 255, 255, 0.4) 20%, transparent 70%);
   padding: 40px;
 }
 
 .article_text h2 {
-  text-shadow: 1px 1px 10px rgba(0,0,255, 0.8);
+  text-shadow: 1px 1px 10px rgba(0, 0, 255, 0.8);
   font-weight: 600;
 }
 
@@ -322,12 +322,20 @@ nav a.router-link-exact-active:hover {
 }
 
 @keyframes floater {
-  from { transform: translate(0,  -2px); 
-         letter-spacing: 2ch; }
-  50%  { transform: translate(-5px, 15px); 
-         letter-spacing: 2.4ch; }  
-  to   { transform: translate(0, -2px); 
-         letter-spacing: 2ch; }  
+  from {
+    transform: translate(0, -2px);
+    letter-spacing: 2ch;
+  }
+
+  50% {
+    transform: translate(-5px, 15px);
+    letter-spacing: 2.4ch;
+  }
+
+  to {
+    transform: translate(0, -2px);
+    letter-spacing: 2ch;
+  }
 }
 
 /* MEDIA RULE --------------------------*/
@@ -363,7 +371,7 @@ nav a.router-link-exact-active:hover {
     color: rgb(92, 92, 212);
   }
 
-  nav > * {
+  nav>* {
     /*text*/
     font-size: 24px;
     letter-spacing: 2ch;
@@ -392,7 +400,7 @@ nav a.router-link-exact-active:hover {
 
   nav a.router-link-active {
     background: yellow;
-    border-radius:50%;
+    border-radius: 50%;
     padding-left: 5%;
     max-width: fit-content;
     filter: blur(0px);
@@ -402,14 +410,14 @@ nav a.router-link-exact-active:hover {
   nav a.router-link-exact-active:hover {
     background: yellow;
     filter: none;
-    border-radius:50%;
+    border-radius: 50%;
     filter: drop-shadow(0.2rem 0.2rem 1rem yellow);
     transition: 0.5s;
   }
 
-  nav a:hover{
+  nav a:hover {
     background: yellow;
-    border-radius:50%;
+    border-radius: 50%;
     padding-left: 5%;
     max-width: fit-content;
     filter: blur(0px);
@@ -429,7 +437,7 @@ nav a.router-link-exact-active:hover {
     z-index: 1;
     background: radial-gradient(ellipse at top left, transparent 10%, white 40%, transparent 70%);
   }
-  
+
   .navigation-panel {
     position: relative;
     display: block;
@@ -480,13 +488,24 @@ nav a.router-link-exact-active:hover {
     padding-right: 4vw;
   }
 
-/* ANIM --------------------------*/
+  /* ANIM --------------------------*/
 
   @keyframes floater_mob {
-    from { transform: translate(0,  0px); }
-    35%  { transform: translate(3px, 7px); } 
-    65%  { transform: translate(-5px, 15px); }  
-    to   { transform: translate(0, 0px); }  
+    from {
+      transform: translate(0, 0px);
+    }
+
+    35% {
+      transform: translate(3px, 7px);
+    }
+
+    65% {
+      transform: translate(-5px, 15px);
+    }
+
+    to {
+      transform: translate(0, 0px);
+    }
   }
 
 }

@@ -2,7 +2,7 @@ This project serves as an applied instance of a wider investigation into interac
 
 <div class="mkd_img"> 
 
-|![CONDUIT](/images/articles/conduit_3.jpg)|
+|![CONDUIT](/images/articles/conduit_1.jpg)|
 |:--:| 
 ||
 
@@ -25,20 +25,13 @@ A black plastic vessel holds an oily substance. Aquarium tubes are arranged runn
 
 Closeup of vacuum pumps and electronics. The Arduino board receives the weight values of the three glasses and modulates power to each corresponding vacuum pump motor (using two motor driver shields).
 
-<div class="mkd_img"> 
-
-|![CONDUIT](/images/articles/conduit_1.jpg)|
-|:--:| 
-||
-
-</div>
-
 An air intake valve is located at the top of each pump. From here the motor pushes air through the release valve, funnelling air through the aquarium tubing and into the base of the vessel. The less force, the lower the air output.
 
 <div class="mkd_img"> 
 
-|![CONDUIT](/images/articles/conduit_5.jpg)|
+|![CONDUIT](/images/articles/conduit_3.jpg)|
 |:--:| 
 ||
 
 </div>
+

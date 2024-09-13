@@ -6,7 +6,7 @@
 
 </div>
 
- NVIDIA StyleGAN2-ADA Machine Learning video trained and rendered with Google Colab Pro. I used PyTorch, to avoid having to port the dataset to the proprietary TensorFlow filing system. 
+ NVIDIA StyleGAN2-ADA Machine Learning video trained and rendered using cloud computing instances provided by Google Colab Pro and Paperspace. I used PyTorch, to avoid having to port the dataset to the proprietary TensorFlow filing system. 
 
  <div class="video_container">
     <div class="video_flexbox">

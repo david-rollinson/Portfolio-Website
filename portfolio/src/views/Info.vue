@@ -3,30 +3,30 @@
     <header></header>
 
     <body>
-      <div class="about_text" style="height: 50vh">
+      <div class="about_text" style="display: flex; flex-direction: column; height: 50vh">
         <h3>
-          All enquiries:<span style="letter-spacing: 1vw; text-align: center"
+          <p>CV available upon request.</p>
+          <span style="letter-spacing: 1vw; text-align: center"
             > davrc . me @ gmail . com</span
           >
-          <p>CV available upon request.</p>
           <br />
-          <br /><span style="font-weight: 800; font-family: Codystar"
-            >Elsewhere >
-          </span>
-          <a
-            href="https://github.com/david-rollinson"
-            target="_blank"
-            rel="noreferrer noopener"
-            >Github</a
-          >
-          |
-          <a
-            href="https://linkedin.com/in/rollinson-david"
-            target="_blank"
-            rel="noreferrer noopener"
-            >LinkedIn</a
-          >
+          <br />
         </h3>
+          <div style="font-weight: 300; word-spacing: 1vw">
+            <a
+              href="https://github.com/david-rollinson"
+              target="_blank"
+              rel="noreferrer noopener"
+              >Github</a
+            >
+            |
+            <a
+              href="https://linkedin.com/in/rollinson-david"
+              target="_blank"
+              rel="noreferrer noopener"
+              >LinkedIn</a
+            >
+          </div>
       </div>
       <div class="footer">
         <p>
