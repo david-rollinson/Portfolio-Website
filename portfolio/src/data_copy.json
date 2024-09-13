@@ -8,8 +8,7 @@
             "image": "1.webp",
             "media_extension": ".webp",
             "template": "/articles/cyclops_retina.md"
-        },
-        {
+        },        {
             "name": "Vitrolithic Ferrous Homunculi",
             "slug": "ferrous",
             "id": 2,
@@ -17,7 +16,7 @@
             "image": "9.webp",
             "media_extension": ".webp",
             "template": "/articles/vitrolithic_ferrous.md"
-        },
+        },        
         {
             "name": "Pool (Orientation 1).",
             "slug": "pool",
@@ -26,8 +25,7 @@
             "image": "2.webp",
             "media_extension": ".webp",
             "template": "/articles/pool_orientation.md"
-        },
-        {
+        },         {
             "name": "Delta Functions Residency",
             "slug": "deltafunctions",
             "id": 4,
@@ -35,8 +33,7 @@
             "image": "delta_func.webp",
             "media_extension": ".webp",
             "template": "/articles/delta_functions.md"
-        },
-        {
+        },{
             "name": "StyleGAN Hollow Face Illusion.",
             "slug": "hollowfaceillusion",
             "id": 5,
@@ -44,8 +41,7 @@
             "image": "3.webp",
             "media_extension": ".webp",
             "template": "/articles/stylegan_2.md"
-        },
-        {
+        },         {
             "name": "COUNDUIT.",
             "slug": "conduit",
             "id": 6,
@@ -53,6 +49,38 @@
             "image": "4.webp",
             "media_extension": ".webp",
             "template": "/articles/conduit.md"
+        },         {
+            "name": "Blender CGI.",
+            "slug": "blender",
+            "id": 7,
+            "description": "Blender CGI.",
+            "image": "5.webp",
+            "media_extension": ".webp",
+            "template": "/articles/cgi_collection.md"
+        },         {
+            "name": "Lightning Neural Inpainting.",
+            "slug": "neuralinpaint",
+            "id": 8,
+            "description": "Lightning Neural Inpainting.",
+            "image": "6.webp",
+            "media_extension": ".webp",
+            "template": "/articles/neural_inpainting.md"
+        },         {
+            "name": "Machine Learning Sketches.",
+            "slug": "creativeml",
+            "id": 9,
+            "description": "Machine Learning Sketches.",
+            "image": "7.webp",
+            "media_extension": ".webp",
+            "template": "/articles/machine_learning.md"
+        },         {
+            "name": "Exquisite Horse.",
+            "slug": "exquisitehorse",
+            "id": 10,
+            "description": "Exquisite Horse.",
+            "image": "8.gif",
+            "media_extension": ".gif",
+            "template": "/articles/exquisite_horse.md"
         }
     ]
 }
