@@ -43,6 +43,29 @@
   </div>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+    };
+  },
+  mounted() {
+    window.scrollTo({ top: 0, left: 0 });
+  },
+  unmounted() {
+
+  },
+  methods: {
+    handleInfoScroll (event) {
+
+    }
+  },
+  props: {
+
+  },
+};
+</script>
+
 <style scoped>
 .footer {
   display: block;

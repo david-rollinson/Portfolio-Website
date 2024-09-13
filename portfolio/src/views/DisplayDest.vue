@@ -1,16 +1,22 @@
 <template>
   <div>
     <section class="project">
-      <div class="details">
-        <!-- <h3>{{ project.description }}</h3> -->
-      </div>
-      <div class="intro_text">
-        <h2>{{ project.name }}</h2>
-        <div v-html="dataToParse" class="markdown_wrapper"></div>
-      </div>
-      <div class="back-home">
-        <a @click="nextId" v-if="withinProjectArray">Next →</a>
-        <RouterLink to="/work" v-if="!withinProjectArray">←Work</RouterLink>
+      <div class="article_container">
+        <div class="article_content">
+
+            <h2>{{ project.name }}</h2>
+            <div v-if="dataToParse === ''" class="await_data"><br>Loading</div>
+            <div v-else>
+              <div v-html="dataToParse" class="markdown_wrapper"></div>
+            </div>
+
+        </div>
+        <div class="back-home">
+
+            <a @click="nextId" v-if="withinProjectArray">Next →</a>
+            <RouterLink to="/work" v-if="!withinProjectArray">←Work</RouterLink>
+
+        </div>
       </div>
     </section>
   </div>
@@ -18,7 +24,6 @@
 
 <script>
 import sourceData from "@/data.json";
-import axios from "axios";
 import { marked } from "marked";
 import DOMPurify from "dompurify";
 
@@ -28,15 +33,12 @@ export default {
   },
   data() {
     return {
-      dataToParse: "Loading...", //initialise as empty, load in later.
+      dataToParse: "", //initialise as empty, load in later.
       withinProjectArray: true,
     };
   },
   mounted() {
-    /*Strapi example*/
-    // axios.get('http://localhost:1337/api/articles/1').then(response => {
-    // console.log(response);
-    // });
+    window.scrollTo({ top: 0, left: 0 });
     this.markdownToHtml(this.id); //load in markdown and save to data variable.
     this.checkId();
   },
@@ -49,14 +51,11 @@ export default {
   },
   methods: {
     async markdownToHtml(_id) {
-      if (sourceData.projects[_id - 1].template != "") {
-        //check if there is data to load.
+      if (sourceData.projects[_id - 1].template != "") { // check if there is data to load.
         let newContent = await fetch(sourceData.projects[_id - 1].template)
           .then((response) => response.text())
           .then((r) => marked.parse(r));
-        // console.log(sourceData.projects[_id-1].template); //check article selection.
-        // console.log(newContent); //check if promise fulfilled.
-        // this.dataToParse = DOMPurify.sanitize(newContent); //TO DO: find out how to sanitise content without removing iframe content?
+        // this.dataToParse = DOMPurify.sanitize(newContent); //TO DO: Remove usage of iFrame. Sanitising content removes vulnerable iFrame elements. 
         this.dataToParse = newContent;
       }
     },
@@ -99,10 +98,23 @@ b {
 .markdown_wrapper {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 200px;
+  margin-bottom: 40px;
   max-width: 60vw;
   overflow: hidden;
   font-weight: 100;
+  animation-name: fadeIn;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-in-out;
+}
+
+.await_data {
+  max-width: 60vw;
+  font-weight: 100;
+}
+
+.await_data:after {
+  content: '';
+  animation: loadingDots 1.5s infinite;
 }
 
 .back-home {
@@ -125,18 +137,6 @@ b {
   margin-left: auto;
   margin-right: auto;
 }
-
-/* img {
-  border: 10px solid white;
-  border-radius: 10px;
-  filter: drop-shadow(0px 2px 5px grey);
-}
-
-iframe video {
-  border: 10px solid white;
-  border-radius: 10px;
-  filter: drop-shadow(0px 2px 5px grey);
-} */
 
 .mkd_img:nth-of-type(1) {
   flex-grow: 1;
@@ -169,6 +169,10 @@ iframe video {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+.video_container .video_flexbox iframe{
+  padding: 20px;
 }
 
 .v_video {
@@ -213,6 +217,26 @@ iframe video {
   margin-right: auto;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+@keyframes loadingDots {
+  0%, 100% {
+    content: '';
+  }
+  25% {
+    content: '. ';
+  }
+  50% {
+    content: '. . ';
+  }
+  75% {
+    content: '. . . ';
+  }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 /*set media rule*/

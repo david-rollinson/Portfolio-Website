@@ -1,3 +1,41 @@
+<template>
+  <div>
+    <body>
+      <div class="grid_container">
+        <div class="projects">
+
+          <RouterLink
+            class="grid_item"
+            v-for="project in projects"
+            :key="project.id"
+            :to="{
+              name: 'project.show',
+              params: { slug: project.slug, id: project.id },
+            }"
+            @mouseenter="mouseEnter"
+            @mousemove="mouseMove"
+            @mouseleave="mouseLeave"
+          >
+
+            <div class="image_border">
+              <div class="image_container">
+                <!--access the newImages array, use project id -1 to account for 0 based counting-->
+                <img
+                  :src="newImages[project.id - 1]"
+                  class="content_img"
+                  rel="preload"
+                />
+              </div>
+            </div>
+            <h3 class="name">{{ project.name }}</h3>
+          </RouterLink>
+
+        </div>
+      </div>
+    </body>
+  </div>
+</template>
+
 <script>
 import { ref, onUnmounted, onMounted } from "vue";
 import sourceData from "@/data.json";
@@ -15,11 +53,12 @@ export default {
     };
   },
   mounted() {
-    // window.addEventListener('wheel', this.handleScroll);
+    if(window.innerWidth > 900){
+      window.scrollTo({ top: 0, left: 0 });
+    }
   },
   unmounted() {
-    // window.removeEventListener('wheel', this.handleScroll);
-    // this.deltaCount = 0;
+
   },
   methods: {
     mouseEnter(event) {
@@ -56,53 +95,6 @@ export default {
 };
 </script>
 
-<template>
-  <div>
-    <header></header>
-
-    <body>
-      <!-- <img v-if="isImageLoaded" :src="imageUrl" /> -->
-      <!-- <div v-for="imageSrc in newImages" style="display: inline-block;">
-    <img v-bind:src="imageSrc" class="content_img" style="width: 200px;">
-    </div> -->
-      <div class="grid_container">
-        <div class="projects">
-          <RouterLink
-            class="grid_item"
-            style="cursor: cell"
-            v-for="project in projects"
-            :key="project.id"
-            :to="{
-              name: 'project.show',
-              params: { slug: project.slug, id: project.id },
-            }"
-            @mouseenter="mouseEnter"
-            @mousemove="mouseMove"
-            @mouseleave="mouseLeave"
-          >
-            <!--go to the project.show route as set in index.js-->
-            <!-- <h2>{{ project.name }}</h2> -->
-            <div class="image_border">
-              <div class="image_container">
-                <!--access the newImages array, use project id -1 to account for 0 based array counting-->
-                <!-- replace below with file extensions that match data.json-->
-                <img
-                  :src="newImages[project.id - 1]"
-                  class="content_img"
-                  rel="preload"
-                />
-              </div>
-            </div>
-            <!-- template including image file, and brief description preview? -->
-            <h3 class="name">{{ project.name }}</h3>
-          </RouterLink>
-          <!--set unique identifier key for each project passed over - enabling vue to keep track of variables-->
-        </div>
-      </div>
-    </body>
-  </div>
-</template>
-
 <style scoped>
 body {
   --image-width: 30vw;
@@ -113,7 +105,27 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20vh;
 }
+
+.grid_item {
+  height: var(--grid-height);
+  transition: 2s;
+  text-decoration: none;
+}
+
+.grid_item:hover .name {
+  opacity: 1;
+  transition: 1s;
+}
+
+.name {
+  margin-top: 5px;
+  opacity: 0;
+  transition: 0.8s;
+  font-size: medium;
+}
+
 .projects {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -121,12 +133,6 @@ body {
   row-gap: 25px;
   justify-items: center;
   margin-bottom: 200px;
-}
-
-.grid_item {
-  height: var(--grid-height);
-  transition: 2s;
-  text-decoration: none;
 }
 
 .image_border {
@@ -164,18 +170,6 @@ body {
   transition: transform 1s;
 }
 
-.name {
-  margin-top: 5px;
-  opacity: 0;
-  transition: 0.8s;
-  font-size: medium;
-}
-
-.grid_item:hover .name {
-  opacity: 1;
-  transition: 1s;
-}
-
 @media (max-width: 900px) {
   body {
     --m-image-width: calc((30vw * 2.33));
@@ -184,10 +178,16 @@ body {
   }
 
   .grid_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    position: relative;
+    margin-top: 5vw;
   }
+
+  .grid_item {
+    filter: saturate(100%);
+    height: var(--m-grid-height);
+  }
+
   .projects {
     display: grid;
     grid-template-columns: 1fr;
@@ -197,28 +197,26 @@ body {
     align-items: end;
   }
 
+  .image_border {
+    filter: drop-shadow(0 0rem 0.6rem blue);
+  }
+
   .image_container {
     height: var(--m-image-height);
   }
-  .grid_item {
-    filter: saturate(100%);
-    height: var(--m-grid-height);
-  }
+
   .content_img {
     width: var(--m-image-width);
+    height: var(--m-image-height);
   }
 
-  .image_border {
-    filter: drop-shadow(0 0rem 0.6rem blue);
+  .content_img:hover {
+    transform: scale(1);
   }
 
   .name {
     margin-top: 10px;
     opacity: 1;
-  }
-
-  .content_img:hover {
-    transform: scale(1);
   }
 }
 </style>
