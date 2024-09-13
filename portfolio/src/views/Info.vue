@@ -12,15 +12,13 @@
           <br />
           <br />
         </h3>
-          <div style="font-weight: 300; word-spacing: 1vw">
+          <div class="info_text">
             <a
               href="https://github.com/david-rollinson"
               target="_blank"
               rel="noreferrer noopener"
               >Github</a
-            >
-            |
-            <a
+            > | <a
               href="https://linkedin.com/in/rollinson-david"
               target="_blank"
               rel="noreferrer noopener"
