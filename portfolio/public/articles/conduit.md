@@ -2,7 +2,7 @@ This project serves as an applied instance of a wider investigation into interac
 
 <div class="mkd_img"> 
 
-|![CONDUIT](../images/articles/conduit_1.jpg)|
+|![CONDUIT](/images/articles/conduit_1.jpg)|
 |:--:| 
 ||
 
@@ -17,7 +17,7 @@ A black plastic vessel holds an oily substance. Aquarium tubes are arranged runn
 
 <div class="mkd_img"> 
 
-|![CONDUIT](../images/articles/conduit_2.jpg)|![CONDUIT](../images/articles/conduit_4.jpg)|
+|![CONDUIT](/images/articles/conduit_2.jpg)|![CONDUIT](/images/articles/conduit_4.jpg)|
 |:--:|:--:| 
 |||
 
@@ -29,7 +29,7 @@ An air intake valve is located at the top of each pump. From here the motor push
 
 <div class="mkd_img"> 
 
-|![CONDUIT](../images/articles/conduit_3.jpg)|
+|![CONDUIT](/images/articles/conduit_3.jpg)|
 |:--:| 
 ||
 

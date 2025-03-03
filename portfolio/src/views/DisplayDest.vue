@@ -151,42 +151,52 @@ b {
   flex-grow: 1;
 }
 
-.video_container {
+.row-media-container {
   display: flex;
-  flex-wrap: wrap;
-  margin-top: var(--margin-val);
-  margin-bottom: var(--margin-val);
-  font-weight: 100;
-  font-size: 15px;
-  justify-content: center;
-}
-
-.video_container .video_flexbox {
-  display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
-  align-items: start;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  align-items: center;
+  gap: 20px;
 }
 
-.video_container .video_flexbox iframe{
-  padding: 20px;
-}
-
-.v_video {
-  width: fit-content;
+.row-video {
   height: 300px;
-  min-height: 200px;
-  max-height: 500px;
+  width: 33%; 
+  max-width: 33%; 
 }
 
-.h_video {
+.row-video iframe {
   width: 100%;
-  min-height: 400px;
-  margin-left: 0px;
-  margin-right: 0px;
+  height: 100%;
+  border: none;
+}
+
+ .column-media-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.column-video {
+  width: 70%; /* Set the width of the video container */
+  max-width: 70%;
+  position: relative;
+  margin-bottom: 20px; /* Ensure space below the video */
+}
+
+.column-caption {
+  width: 100%;
+  font-size: 15px;
+  text-align: center; /* Center text */
+}
+
+.column-video iframe {
+  width: 100%; /* Make iframe fill the container */
+  height: auto; /* Let the height adjust automatically */
+  aspect-ratio: 16/9; /* Directly enforce a 16:9 aspect ratio */
+  border: none;
 }
 
 .row {
@@ -244,14 +254,9 @@ b {
   .markdown_wrapper {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 200px;
     max-width: 100vw;
     overflow: hidden;
     font-weight: 100;
-  }
-
-  .mkd_img {
-    font-size: 12px;
   }
 
   .mkd_img img {
