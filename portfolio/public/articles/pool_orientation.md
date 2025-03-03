@@ -6,10 +6,10 @@ Technologies: OpenFrameworks, OpenGL, NVIDIA StyleGAN2-ADA (Pytorch), Skanect Pr
 I was inspired by Sara Ahmed's 'Queer Phenomenology' to work with form and image in a way that disrupted their apparent physical orientation, as a homage to the disrupted spatial social/political relations queerness offers, touched upon in her book. Derived from this, the light shades and GAN film each offer an interpretation of the ‘hollow-face illusion’. The archway is painted cobalt blue in homage to Derek Jarman, who proposes similar aesthetic philosophies to Ahmed in his 1991 film ‘Blue’.
 
 <div class="mkd_img">
-<img src="/images/articles/pool_1.jpg" alt="Pool (Orientation 1)">
-<img src="/images/articles/pool_2.jpg" alt="Pool (Orientation 1)">
-<img src="/images/articles/pool_3.jpg" alt="Pool (Orientation 1)">
-<img src="/images/articles/pool_4.jpg" alt="Pool (Orientation 1)">
+<img src="../images/articles/pool_1.jpg" alt="Pool (Orientation 1)">
+<img src="../images/articles/pool_2.jpg" alt="Pool (Orientation 1)">
+<img src="../images/articles/pool_3.jpg" alt="Pool (Orientation 1)">
+<img src="../images/articles/pool_4.jpg" alt="Pool (Orientation 1)">
 </div>
 
 <b>Demos:</b>
@@ -50,7 +50,7 @@ Kinect sensor surveys the spatial and chromatic parameters of the gallery space 
 
 <div class="mkd_img"> 
 
-|![Screen Calibration.](/images/articles/pool_5.png)|
+|![Screen Calibration.](../images/articles/pool_5.png)|
 |:--:| 
 |Fusion 360 concept model to approx. scale. Cyan lines indicate audience path through gallery. |
 </div>

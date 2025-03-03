@@ -3,7 +3,7 @@ Graphics work for 2023 online zine currently in development. Technologies: *Skan
 
 <div class="mkd_img"> 
 
-|![Exquisite Hor(p)se](/images/articles/horse_1.gif)|
+|![Exquisite Hor(p)se](../images/articles/horse_1.gif)|
 |:--:| 
 |Demo gif rendered in Processing, assembled in Photoshop CC.|
 

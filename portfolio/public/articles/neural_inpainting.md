@@ -2,7 +2,7 @@
 
 <div class="mkd_img"> 
 
-|![Screen Calibration.](/images/articles/neural_inpaint/neural_1.gif)|
+|![Screen Calibration.](../images/articles/neural_inpaint/neural_1.gif)|
 |:--:| 
 |Demo gif rendered in Processing, assembled in Photoshop CC.|
 
@@ -14,7 +14,7 @@ Technologies: Pix2Pix Tensorflow, Python, Shell Scripting, Paperspace Cloud Comp
 
 <div class="mkd_img"> 
 
-|![pix2pix](/images/articles/neural_inpaint/neural_2.jpg)|![pix2pix](/images/articles/neural_inpaint/neural_3.jpg)|
+|![pix2pix](../images/articles/neural_inpaint/neural_2.jpg)|![pix2pix](../images/articles/neural_inpaint/neural_3.jpg)|
 |:--:|:--:| 
 |After inpainting.|‘Incomplete’ image. Before inpainting.|
 
@@ -28,28 +28,28 @@ Technologies: Pix2Pix Tensorflow, Python, Shell Scripting, Paperspace Cloud Comp
 <div class="mkd_img" style="box-sizing: border-box;">
     <div class="row">
         <div class="column">
-        <img src="/images/articles/neural_inpaint/neural_4.jpg" style="width:100%" alt="Neural Inpaint Image.">
-        <img src="/images/articles/neural_inpaint/neural_5.jpg" style="width:100%" alt="Neural Inpaint Image.">
-        <img src="/images/articles/neural_inpaint/neural_6.jpg" style="width:100%" alt="Neural Inpaint Image.">
-        <img src="/images/articles/neural_inpaint/neural_7.jpg" style="width:100%" alt="Neural Inpaint Image.">
-        <img src="/images/articles/neural_inpaint/neural_8.jpg" style="width:100%" alt="Neural Inpaint Image.">
+        <img src="../images/articles/neural_inpaint/neural_4.jpg" style="width:100%" alt="Neural Inpaint Image.">
+        <img src="../images/articles/neural_inpaint/neural_5.jpg" style="width:100%" alt="Neural Inpaint Image.">
+        <img src="../images/articles/neural_inpaint/neural_6.jpg" style="width:100%" alt="Neural Inpaint Image.">
+        <img src="../images/articles/neural_inpaint/neural_7.jpg" style="width:100%" alt="Neural Inpaint Image.">
+        <img src="../images/articles/neural_inpaint/neural_8.jpg" style="width:100%" alt="Neural Inpaint Image.">
         </div>
         <div class="column">
-        <img src="/images/articles/neural_inpaint/neural_9.jpg" style="width:100%" alt="Neural Inpaint Image.">
-        <img src="/images/articles/neural_inpaint/neural_10.jpg" style="width:100%" alt="Neural Inpaint Image.">
-        <img src="/images/articles/neural_inpaint/neural_11.jpg" style="width:100%" alt="Neural Inpaint Image.">
-        <img src="/images/articles/neural_inpaint/neural_12.jpg" style="width:100%" alt="Neural Inpaint Image.">
-        <img src="/images/articles/neural_inpaint/neural_13.jpg" style="width:100%" alt="Neural Inpaint Image.">
+        <img src="../images/articles/neural_inpaint/neural_9.jpg" style="width:100%" alt="Neural Inpaint Image.">
+        <img src="../images/articles/neural_inpaint/neural_10.jpg" style="width:100%" alt="Neural Inpaint Image.">
+        <img src="../images/articles/neural_inpaint/neural_11.jpg" style="width:100%" alt="Neural Inpaint Image.">
+        <img src="../images/articles/neural_inpaint/neural_12.jpg" style="width:100%" alt="Neural Inpaint Image.">
+        <img src="../images/articles/neural_inpaint/neural_13.jpg" style="width:100%" alt="Neural Inpaint Image.">
         </div>
     </div>
-    <img src="/images/articles/neural_inpaint/neural_14.jpg" style="width:35%; margin-top: 8px" alt="Neural Inpaint Image.">
+    <img src="../images/articles/neural_inpaint/neural_14.jpg" style="width:35%; margin-top: 8px" alt="Neural Inpaint Image.">
 </div>
 
 ## Interactive Sketch.
 
 <div class="mkd_img"> 
 
-|![Screen Calibration.](/images/articles/neural_inpaint/neural_15.gif)|
+|![Screen Calibration.](../images/articles/neural_inpaint/neural_15.gif)|
 |:--:| 
 |Demo gif, assembled in Photoshop CC.|
 

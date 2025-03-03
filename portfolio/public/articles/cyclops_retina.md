@@ -2,7 +2,7 @@ Artist Assistance for Studio Kimchi and Chips with Rosa Menkman at Thin Air, The
 
 <div class="mkd_img"> 
 
-|![Installation image, 2023 - Cyclops Retina, Light Barrier 2.4 © The Beams, Centre for New Culture. ](/images/1.webp)|
+|![Installation image, 2023 - Cyclops Retina, Light Barrier 2.4 © The Beams, Centre for New Culture. ](../images/1.webp)|
 |:--:| 
 |Installation image, 2023 - Cyclops Retina, Light Barrier 2.4 © The Beams, Centre for New Culture.|
 
@@ -32,7 +32,7 @@ The system uses approx. 380 concave mirrors that each project light at calibrate
 
 <div class="mkd_img"> 
 
-|![Screen Calibration.](/images/articles/calibration_1.jpg)|
+|![Screen Calibration.](../images/articles/calibration_1.jpg)|
 |:--:| 
 |Screen placement during calibration phase.|
 
