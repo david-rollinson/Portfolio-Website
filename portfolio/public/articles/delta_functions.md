@@ -12,7 +12,7 @@ Promotional video:
 The results of this were often highly experimental, with the residency space used as a laboratory to test networked interactions with a variety of interfaces,  including cameras, microphones, IR sensors, capacitive touch sensors and motion tracking.
 
 <div class="mkd_img">
-<img src="/images/articles/delta_func_QRcodes.webp" alt="Delta Functions residency space.">
+<img src="/images/articles/delta_func_QRcodes.JPG" alt="Delta Functions residency space.">
 </div>
 
 <!-- <b>Below,</b> graphics 'filter' exhibited as part of 'Delta Functions' at Thin Air, The Beams in June 2023:
