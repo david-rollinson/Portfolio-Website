@@ -143,7 +143,7 @@ b {
 }
 
 a {
-  text-decoration: wavy overline yellow;
+  text-decoration: wavy underline yellow;
   /* text-underline-offset: -1rem; */
   color: rgb(92, 92, 212);
   position: relative;

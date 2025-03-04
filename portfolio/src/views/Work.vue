@@ -146,14 +146,14 @@ body {
 }
 
 .image_container {
-  filter: saturate(70%);
+  filter: saturate(60%);
   overflow: hidden;
   transition: 1s;
   height: var(--image-height);
 }
 
 .image_container:hover {
-  filter: saturate(100%);
+  filter: saturate(110%);
   transition: 2s;
 }
 

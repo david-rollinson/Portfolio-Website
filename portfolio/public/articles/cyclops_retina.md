@@ -9,7 +9,6 @@ Technical assistance for artists Kimchi&Chips and Rosa Menkman in the production
 </div>
 
 I assisted in the calibration of the Light Barrier curved mirror array installation, and the development of film for use in the final projection. As well as video editing and effects prototyping, this involved the setup and deployment of Linux cloud-computing instances with the [A1111 web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) which I used to generate and render depth-map video for the projection. These were then localised via terminal ready for treatment in DaVinci Resolve, Adobe Premiere and AfterEffects. The below graphics were created in AfterEffects. 
-<br></br>
 <div class="column-media-container">
     <div class="row-media-container">
         <div class="row-video">
