@@ -9,8 +9,10 @@
             v-for="project in projects"
             :key="project.id"
             :to="{
+            /*
               name: 'project.show',
               params: { slug: project.slug, id: project.id },
+            */
             }"
             @mouseenter="mouseEnter"
             @mousemove="mouseMove"
