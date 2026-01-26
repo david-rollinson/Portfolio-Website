@@ -5,29 +5,8 @@
 
         <div class="intro_text">
         <h3>
-          <p class="note">
-            † Note: See this website's development on
-            <a
-              href="https://github.com/david-rollinson/Portfolio-Website/tree/maintenance/portfolio"
-              target="_blank"
-              rel="noreferrer noopener"
-              >Github</a
-            >
-            . Scroll down or use the navigation panel to see recent projects.
-          </p>
           <span style="font-weight: 400">David Rollinson</span> is a London-based creative
-          technology professional currently providing technical direction and support to animated feature films. Central to their work is their interest in creative computation for space and screen. They have worked on projects from CGI and animation to graphical programming, custom electronics, installation design and HCI. They developed this website along with other interactive web-based experiences and last year exhibited a hypermedia installation at Bargehouse Gallery, Southbank. 
-          <p>
-            <span style="font-weight: 400">Recently</span> they were a resident
-            creative technologist at
-            <a
-              href="https://thebeamslondon.com/thin-air/"
-              target="_blank"
-              rel="noreferrer noopener"
-              >Thin Air</a
-            >, where they also assisted artists Kimchi&Chips and Rosa Menkman in the development of 'Cyclops Retina,
-            Light Barrier 2.4'.
-          </p>
+          technology professional currently providing technical direction and support to advertising commercials. Central to their work is their interest in creative computation for space and screen. 
         </h3>
         </div>
 
